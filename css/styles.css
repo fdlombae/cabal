@@ -235,11 +235,11 @@ sup {
 }
 
 a {
-  color: #1D809F;
+  color: var(--bs-secondary);
   text-decoration: underline;
 }
 a:hover {
-  color: #17667f;
+  color: var(--bs-dark);
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3060,12 +3060,12 @@ textarea.form-control-lg {
 
 .btn-secondary {
   color: #000;
-  background-color: #ecb807;
+  background-color: var(--bs-secondary);
   border-color: #ecb807;
 }
 .btn-secondary:hover {
   color: #000;
-  background-color: #efc32c;
+  background-color: var(--bs-secondary);
   border-color: #eebf20;
 }
 .btn-check:focus + .btn-secondary, .btn-secondary:focus {
