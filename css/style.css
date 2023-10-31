@@ -1,0 +1,15 @@
+.content-section {
+    margin-top: 5vh
+}
+
+.masthead {
+    margin-top: 5vh
+}
+
+.card-band-img {
+    height: 40vh;
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: auto;
+    margin-bottom: 20px
+}

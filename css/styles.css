@@ -33,14 +33,14 @@
   --bs-gray-700: #495057;
   --bs-gray-800: #343a40;
   --bs-gray-900: #212529;
-  --bs-primary: #d3836f;
-  --bs-secondary: #e0b3a8;
+  --bs-primary: #c77c7c; /* A warmer, more saturated hue for primary that stands out */
+  --bs-secondary: #d9ada3; /* A softer secondary that complements the primary */
   --bs-success: #198754;
   --bs-info: #0dcaf0;
   --bs-warning: #c18f11;
   --bs-danger: #dc3545;
-  --bs-light: #fde8de;
-  --bs-dark: #151921;
+  --bs-light: #fff0eb; /* A lighter, almost white color for contrast against darker elements */
+  --bs-dark: #1a1c20; /* A slightly lighter dark color to soften the harsh contrast */
   --bs-primary-rgb: 242, 187, 173;
   --bs-secondary-rgb: 248, 219, 212;
   --bs-success-rgb: 25, 135, 84;
@@ -60,8 +60,8 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #151921;
-  --bs-body-bg: #e0b3a8;
+  --bs-body-color: #1a1c20; /* Adjusted to match the updated dark color */
+  --bs-body-bg: #f5e0dc;
 }
 
 *,
