@@ -1,0 +1,7 @@
+# Robots.txt for www.cabalfolk.be
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.cabalfolk.be/sitemap.xml
