@@ -13,3 +13,30 @@
     width: auto;
     margin-bottom: 20px
 }
+
+/* Main heading style */
+.main-title {
+    font-size: 72px;
+}
+
+/* Hero/feature image style */
+.hero-img {
+    height: 40vh;
+    object-fit: cover;
+}
+
+/* Taller image variant */
+.hero-img-tall {
+    height: 50vh;
+    object-fit: cover;
+}
+
+/* Button spacing */
+.btn-spaced {
+    margin-bottom: 20px;
+}
+
+/* Section row spacing */
+.section-row {
+    margin-top: 5vh;
+}

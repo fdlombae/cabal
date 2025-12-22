@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html lang="nl">
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
@@ -7,6 +7,29 @@
         <meta name="author" content="Flor Delombaerde" />
         <meta name="google-site-verification" content="1jRTEs3EkowVXYY_JP4UaLwyHoAWwg5SsQvCT" />
         <title>CaBal - Balfolk Kortrijk</title>
+
+        <!-- Canonical URL -->
+        <link rel="canonical" href="https://www.cabalfolk.be/" />
+
+        <!-- Hreflang for language alternates -->
+        <link rel="alternate" hreflang="nl" href="https://www.cabalfolk.be/" />
+        <link rel="alternate" hreflang="fr" href="https://www.cabalfolk.be/" />
+        <link rel="alternate" hreflang="x-default" href="https://www.cabalfolk.be/" />
+
+        <!-- Open Graph / Facebook -->
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://www.cabalfolk.be/" />
+        <meta property="og:title" content="CaBal - Balfolk Kortrijk" />
+        <meta property="og:description" content="CaBal brengt toegankelijke internationale balfolk voor jong en oud. Initiatie met daaropvolgend twee sets baldansen met twee bands per avond." />
+        <meta property="og:image" content="https://www.cabalfolk.be/assets/img/Cabal8maart2024_thomasgrin-73.webp" />
+        <meta property="og:locale" content="nl_BE" />
+        <meta property="og:locale:alternate" content="fr_BE" />
+
+        <!-- Twitter Card -->
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="CaBal - Balfolk Kortrijk" />
+        <meta name="twitter:description" content="CaBal brengt toegankelijke internationale balfolk voor jong en oud. Initiatie met daaropvolgend twee sets baldansen met twee bands per avond." />
+        <meta name="twitter:image" content="https://www.cabalfolk.be/assets/img/Cabal8maart2024_thomasgrin-73.webp" />
 
         <!-- Favicon-->
         <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
@@ -27,14 +50,92 @@
         <meta name="msapplication-TileImage" content="assets/favicon/ms-icon-144x144.png">
         <meta name="theme-color" content="#ffffff">
 
+        <!-- Preconnect to external domains for faster loading -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+        <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+
         <!-- Simple line icons-->
         <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
-        <!-- Google fonts-->
-        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Google fonts with display=swap for better performance -->
+        <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
         <link href="css/styles.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
+
+        <!-- Structured Data (JSON-LD) for SEO -->
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "CaBal",
+            "url": "https://www.cabalfolk.be",
+            "logo": "https://www.cabalfolk.be/assets/favicon/android-chrome-512x512.png",
+            "description": "CaBal brengt toegankelijke internationale balfolk voor jong en oud in Kortrijk, België.",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "Nelson Mandelaplein 17",
+                "addressLocality": "Kortrijk",
+                "postalCode": "8500",
+                "addressCountry": "BE"
+            },
+            "sameAs": [
+                "https://www.facebook.com/cabalfolk",
+                "https://www.instagram.com/cabalfolk/"
+            ]
+        }
+        </script>
+        <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "CaBal Balfolk - Duo Nello & Bargainatt",
+            "description": "Balfolk avond met Duo Nello (FR) en Bargainatt (FR). Inclusief dansinitiatie.",
+            "startDate": "2026-01-23T19:15:00+01:00",
+            "endDate": "2026-01-24T00:30:00+01:00",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+                "@type": "Place",
+                "name": "JC Tranzit",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "Nelson Mandelaplein 17",
+                    "addressLocality": "Kortrijk",
+                    "postalCode": "8500",
+                    "addressCountry": "BE"
+                }
+            },
+            "image": "https://www.cabalfolk.be/assets/img/duo_nello.webp",
+            "offers": {
+                "@type": "Offer",
+                "price": "22",
+                "priceCurrency": "EUR",
+                "url": "https://www.event-tickets.be/Event/B9dLTRCepski2djd67ufkKszYYbVzyX5sRRKHbge",
+                "availability": "https://schema.org/InStock"
+            },
+            "performer": [
+                {
+                    "@type": "MusicGroup",
+                    "name": "Duo Nello"
+                },
+                {
+                    "@type": "MusicGroup",
+                    "name": "Bargainatt"
+                }
+            ],
+            "organizer": {
+                "@type": "Organization",
+                "name": "CaBal",
+                "url": "https://www.cabalfolk.be"
+            }
+        }
+        </script>
     </head>
     <body id="page-top">
+        <!-- Skip to main content link for accessibility -->
+        <a class="visually-hidden-focusable" href="#about">Skip to main content</a>
+
         <!-- Fixed navbar -->
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
             <div class="container-fluid">
@@ -67,8 +168,8 @@
                                 <span lang="nl">Taal</span><span lang="fr">Langue</span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="languageDropdown">
-                                <li class="dropdown-item" onclick="changeLanguage('nl')">NL</li>
-                                <li class="dropdown-item" onclick="changeLanguage('fr')">FR</li>
+                                <li><button type="button" class="dropdown-item" onclick="changeLanguage('nl')">NL</button></li>
+                                <li><button type="button" class="dropdown-item" onclick="changeLanguage('fr')">FR</button></li>
                             </ul>
                         </li>
                     </ul>
@@ -87,7 +188,7 @@
             <!-- About -->
             <section class="content-section bg-light" id="about">
                 <div class="container px-4 px-lg-5">
-                    <h1 class="mb-5 text-center" style="font-size: 72px">CaBal</h1>
+                    <h1 class="mb-5 text-center main-title">CaBal</h1>
                     <hr class="hr">
                     <div class="row gx-4 gx-lg-5 justify-content-center">
                         <div class="col-lg-6 col-md-4 col-sm-12">
@@ -101,7 +202,7 @@
                             </p>
                         </div>
                         <div class="col-lg-6 col-md-8 col-sm-12">
-                            <img src="assets/img/Cabal8maart2024_thomasgrin-73.webp" class="img-fluid rounded-3" style="height: 40vh; object-fit: cover" alt="Group of people dancing with two musicians on stage">
+                            <img src="assets/img/Cabal8maart2024_thomasgrin-73.webp" class="img-fluid rounded-3 hero-img" alt="Group of people dancing with two musicians on stage">
                         </div>
                     </div>
                 </div>
@@ -113,52 +214,6 @@
                     <div class="content-section-heading">
                         <div class="text-center"><h2 class="mb-5"><span lang="nl">Evenementen</span><span lang="fr">Événements</span></h2></div>
                         <hr class="hr">
-
-                        <br />
-
-                        <div class="card bg-light">
-                            <div class="card-header">
-                                <!-- Toggle button for collapsible content -->
-                                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardDec2025" aria-expanded="true" aria-controls="collapseCardDec2025">
-                                    <h4>
-                                        <span lang="nl">13 December 2025</span>
-                                        <span lang="fr">13 Decembre 2025</span>
-                                    </h4>
-                                </button>
-                            </div>
-                            <!-- Collapsible card body -->
-                            <div id="collapseCardDec2025" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                <div class="card-body">
-                                    <div class="row">
-                                        <div class="col-md-4 lead">
-                                            <p class="card-text">
-                                                <span lang="nl">Balfolk avond met</span>
-                                                <span lang="fr">Soirée Balfolk avec</span>
-                                                <a href="https://www.cardboardcabin.be/"><b>Cardboard Cabin</b></a>
-                                                <span lang="nl">en</span><span lang="fr">et</span> <a href="https://cveprod.org/ciacboum/"><b>Ciac Boum (FR)</b></a>.
-                                            <ul>
-                                                <li><span lang="nl">19u45: Deuren open</span><span lang="fr">19h45 : Ouverture des portes</span></li>
-                                                <li><span lang="nl">20u: Dans initiatie</span><span lang="fr">20h : Initiation à la danse</span></li>
-                                                <li><span lang="nl">21u: Cardboard Cabin</span><span lang="fr">21h: Cardboard Cabin</span></li>
-                                                <li><span lang="nl">22u45: Ciac Boum</span><span lang="fr">22h45 : Ciac Boum</span></li>
-                                            </ul>
-                                            <p>
-                                                <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><br>23 euro</span>
-                                            </p>
-                                            <a style="margin-bottom: 20px" href="https://www.event-tickets.be/Event/rdPYPgAA9jdUYXANEWuCwhxA7P4w7bUMVmTcZJTr" class="btn btn-secondary">Tickets</a>
-
-                                        </div>
-                                        <!-- ... Images ... -->
-                                        <div class="col-md-4">
-                                            <img src="assets/img/cardboard%20cabin.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Cardboard Cabin">
-                                        </div>
-                                        <div class="col-md-4">
-                                            <img src="assets/img/Ciac%20Boum.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Ciac Boum">
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
                         <br />
 
@@ -189,9 +244,9 @@
                                                 <li><span lang="nl">22u30: Bargainatt</span><span lang="fr">22h30 : Bargainatt</span></li>
                                             </ul>
                                             <p>
-                                                <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><br>22 euro</span>
+                                                <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><br>22 euro
                                             </p>
-                                            <a style="margin-bottom: 20px" href="https://www.event-tickets.be/Event/B9dLTRCepski2djd67ufkKszYYbVzyX5sRRKHbge" class="btn btn-secondary">Tickets</a>
+                                            <a class="btn btn-secondary btn-spaced" href="https://www.event-tickets.be/Event/B9dLTRCepski2djd67ufkKszYYbVzyX5sRRKHbge">Tickets</a>
                                             <br>
                                             <p>
                                                 <span lang="nl">Op zondag 25/01 spelen dezelfde bands ook op <a href="https://frissefolk.be/nl/event-nl/bal-duo-nello-&-bargainatt-la-tricoterie/1285/">Frisse Folk (Brussel)</a>. Steun folkorganisatoren en -muzikanten, doe jezelf een plezier… en ga gewoon naar beide bals! Alvast bedankt!</span>
@@ -200,10 +255,10 @@
                                         </div>
                                         <!-- ... Images ... -->
                                         <div class="col-md-4">
-                                            <img src="assets/img/duo_nello.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Duo Nello">
+                                            <img src="assets/img/duo_nello.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Duo Nello">
                                         </div>
                                         <div class="col-md-4">
-                                            <img src="assets/img/Bargainatt.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Bargainatt">
+                                            <img src="assets/img/Bargainatt.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Bargainatt">
                                         </div>
                                     </div>
                                 </div>
@@ -221,9 +276,9 @@
                 <div class="container px-4 px-lg-5 ">
                     <h1 class="mb-4 text-center"><span lang="nl">Danslessen</span><span lang="fr">Cours de danses</span></h1>
                     <hr class="hr">
-                    <div class="row" style="margin-top: 5vh">
+                    <div class="row section-row">
                         <div class="col-md-3">
-                            <img src="assets/img/PJ-Dancing.jpeg" class="img-fluid rounded-3" style="height: 50vh; object-fit: cover" alt="Pieter-Jan Hantson teaching a couple dance">
+                            <img src="assets/img/PJ-Dancing.webp" class="img-fluid rounded-3 hero-img-tall" alt="Pieter-Jan Hantson teaching a couple dance" loading="lazy">
                         </div>
                         <div class="col-md-9">
                             <p class="lead">
@@ -232,7 +287,7 @@
                                 Na de pauze verdiepen we die ervaring. We duiken in dynamiek en muzikaliteit, leren enkele uitdagendere dansen en spelen met verfijning, connectie en expressie – daar waar dans en verbinding samenvallen.
                             </p>
                             <br/>
-                            <a class="btn btn-secondary dropdown-toggle" href="#dance-info" aria-controls="dance-info" data-bs-toggle="collapse" aria-expanded="false" style="margin-bottom: 20px">Alle Info</a>
+                            <a class="btn btn-secondary dropdown-toggle btn-spaced" href="#dance-info" aria-controls="dance-info" data-bs-toggle="collapse" aria-expanded="false">Alle Info</a>
                             <div class="collapse" id="dance-info">
                                 <hr>
                                 <p>
@@ -252,7 +307,7 @@
                                 </p>
                                 <br>
                                 <hr>
-                                <a style="margin-bottom: 20px" href="https://www.event-tickets.be/Event/Q5DgWT7bRiqZQwFuGbcZ2TEEgLivBnRYezFRDVPu" class="btn btn-secondary">Inschrijven</a>
+                                <a class="btn btn-secondary btn-spaced" href="https://www.event-tickets.be/Event/Q5DgWT7bRiqZQwFuGbcZ2TEEgLivBnRYezFRDVPu">Inschrijven</a>
 
                             </div>
                         </div>
@@ -270,7 +325,49 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardNov2025" aria-expanded="true" aria-controls="collapseCardNov2025">
+                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardDec2025" aria-expanded="false" aria-controls="collapseCardDec2025">
+                                <h4>
+                                    <span lang="nl">13 December 2025</span>
+                                    <span lang="fr">13 Décembre 2025</span>
+                                </h4>
+                            </button>
+                        </div>
+                        <!-- Collapsible card body -->
+                        <div id="collapseCardDec2025" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col-md-4 lead">
+                                        <p class="card-text">
+                                            <span lang="nl">Balfolk avond met</span>
+                                            <span lang="fr">Soirée Balfolk avec</span>
+                                            <a href="https://www.cardboardcabin.be/"><b>Cardboard Cabin</b></a>
+                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="https://cveprod.org/ciacboum/"><b>Ciac Boum (FR)</b></a>.
+                                        <ul>
+                                            <li><span lang="nl">19u45: Deuren open</span><span lang="fr">19h45 : Ouverture des portes</span></li>
+                                            <li><span lang="nl">20u: Dans initiatie</span><span lang="fr">20h : Initiation à la danse</span></li>
+                                            <li><span lang="nl">21u: Cardboard Cabin</span><span lang="fr">21h: Cardboard Cabin</span></li>
+                                            <li><span lang="nl">22u45: Ciac Boum</span><span lang="fr">22h45 : Ciac Boum</span></li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                    <!-- ... Images ... -->
+                                    <div class="col-md-4">
+                                        <img src="assets/img/cardboard%20cabin.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Cardboard Cabin">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <img src="assets/img/Ciac%20Boum.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Ciac Boum">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br />
+
+                    <div class="card bg-light">
+                        <div class="card-header">
+                            <!-- Toggle button for collapsible content -->
+                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardNov2025" aria-expanded="false" aria-controls="collapseCardNov2025">
                                 <h4>
                                     <span lang="nl">14 November 2025</span>
                                     <span lang="fr">14 Novembre 2025</span>
@@ -294,16 +391,16 @@
                                             <li><span lang="nl">22u15: Emily And The Simons</span><span lang="fr">22h15 : Emily And The Simons</span></li>
                                         </ul>
                                         <p>
-                                            <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><br>20 euro</span>
+                                            <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><br>20 euro
                                         </p>
 
                                     </div>
                                     <!-- ... Images ... -->
                                     <div class="col-md-4">
-                                        <img src="assets/img/Viorel.webp" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Viorel">
+                                        <img src="assets/img/Viorel.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Viorel">
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/Emily%20And%20The%20Simons.JPG" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Emily And The Simons">
+                                        <img src="assets/img/Emily%20And%20The%20Simons.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Emily And The Simons">
                                     </div>
                                 </div>
                             </div>
@@ -342,17 +439,17 @@
                                     </div>
                                     <!-- ... Images ... -->
                                     <div class="col-md-4">
-                                        <img src="assets/img/anouk+filippe.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Duo Gambetta - Sanczuk">
+                                        <img src="assets/img/anouk+filippe.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Duo Gambetta - Sanczuk">
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/Kabal.jpeg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of KABÁL">
+                                        <img src="assets/img/Kabal.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of KABÁL">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    </br>
+                    <br>
 
                     <div class="card bg-light">
                         <div class="card-header">
@@ -384,17 +481,17 @@
                                     </div>
                                     <!-- ... Images ... -->
                                     <div class="col-md-4">
-                                        <img src="assets/img/Driadi%20Duo.jpeg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Wouter Kuyper">
+                                        <img src="assets/img/Driadi%20Duo.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Wouter Kuyper">
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/Loogaroo%20Quartet.webp" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Triple-X">
+                                        <img src="assets/img/Loogaroo%20Quartet.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Triple-X">
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    </br>
+                    <br>
 
                     <div class="card bg-light">
                         <div class="card-header">
@@ -425,10 +522,10 @@
                                     </div>
                                     <!-- ... Images ... -->
                                     <div class="col-md-3">
-                                        <img src="assets/img/Wouter%20Kuyper.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Wouter Kuyper">
+                                        <img src="assets/img/Wouter%20Kuyper.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Wouter Kuyper">
                                     </div>
                                     <div class="col-md-5">
-                                        <img src="assets/img/Triple%20x.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Triple-X">
+                                        <img src="assets/img/Triple%20x.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Triple-X">
                                     </div>
                                 </div>
                             </div>
@@ -469,13 +566,13 @@
                                     </div>
                                     <!-- ... Images ... -->
                                     <div class="col-md-3">
-                                        <img src="assets/img/accords_perdus.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Accords Perdus">
+                                        <img src="assets/img/accords_perdus.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Accords Perdus">
                                     </div>
                                     <div class="col-md-3">
-                                        <img src="assets/img/aerokorda.webp" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Aerokorda">
+                                        <img src="assets/img/aerokorda.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Aerokorda">
                                     </div>
                                     <div class="col-md-2">
-                                        <img src="assets/img/akleja.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Akleja">
+                                        <img src="assets/img/akleja.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Akleja">
                                     </div>
                                 </div>
                             </div>
@@ -516,13 +613,13 @@
                                     </div>
                                     <!-- ... Images ... -->
                                     <div class="col-md-3">
-                                        <img src="assets/img/Thalas.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Thalas">
+                                        <img src="assets/img/Thalas.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Thalas">
                                     </div>
                                     <div class="col-md-3">
-                                        <img src="assets/img/KV%20Express.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of KV Express">
+                                        <img src="assets/img/KV%20Express.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of KV Express">
                                     </div>
                                     <div class="col-md-2">
-                                        <img src="assets/img/Marasc.png" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Marasc">
+                                        <img src="assets/img/Marasc.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Marasc">
                                     </div>
                                 </div>
                             </div>
@@ -560,10 +657,10 @@
                                         </p>
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/Remi%20Geffroy.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Rémi Geffroy">
+                                        <img src="assets/img/Remi%20Geffroy.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Rémi Geffroy">
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/tmam.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Tom Moore & Archie Moss">
+                                        <img src="assets/img/tmam.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Tom Moore & Archie Moss">
                                     </div>
                                 </div>
                             </div>
@@ -601,10 +698,10 @@
                                         </p>
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/ddss.webp" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Duo De Schepper-Sanczuk">
+                                        <img src="assets/img/ddss.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Duo De Schepper-Sanczuk">
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/Hartwin%20Trio.webp" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Hartwin Trio">
+                                        <img src="assets/img/Hartwin%20Trio.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Hartwin Trio">
                                     </div>
                                 </div>
                             </div>
@@ -641,15 +738,15 @@
                                         </ul>
                                         </p>
                                         <p>
-                                            <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><br>16 euro</span>
+                                            <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><br>16 euro
                                         </p>
-                                        <a style="margin-bottom: 20px" href="https://www.event-tickets.be/Event/JwqxyAkyxWb4y9cLdbGAtPefe8jKiS1qdB2P1zMb" class="btn btn-secondary">Tickets</a>
+                                        <a class="btn btn-secondary btn-spaced" href="https://www.event-tickets.be/Event/JwqxyAkyxWb4y9cLdbGAtPefe8jKiS1qdB2P1zMb">Tickets</a>
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/duo_clerckx.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Duo Clercx">
+                                        <img src="assets/img/duo_clerckx.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Duo Clercx">
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/Phlox.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Phlox">
+                                        <img src="assets/img/Phlox.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Phlox">
                                     </div>
                                 </div>
                             </div>
@@ -687,10 +784,10 @@
                                         </p>
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/bamako_express.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Bamako Express">
+                                        <img src="assets/img/bamako_express.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Bamako Express">
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/Krosmos%20Banner.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Krosmos">
+                                        <img src="assets/img/Krosmos%20Banner.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Krosmos">
                                     </div>
                                 </div>
                             </div>
@@ -702,7 +799,7 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardJan2024" aria-expanded="true" aria-controls="collapseCardJan2023">
+                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardJan2024" aria-expanded="true" aria-controls="collapseCardJan2024">
                                 <h4>
                                     <span lang="nl">5 Januari 2024</span>
                                     <span lang="fr">5 Janvier 2024</span>
@@ -728,10 +825,10 @@
                                         </p>
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/airboxes.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Airboxes">
+                                        <img src="assets/img/airboxes.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Airboxes">
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/warmoes.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Warmoes">
+                                        <img src="assets/img/warmoes.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Warmoes">
                                     </div>
                                 </div>
                             </div>
@@ -769,10 +866,10 @@
                                         </p>
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/naragonia.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Naragonia Quartet">
+                                        <img src="assets/img/naragonia.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Naragonia Quartet">
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/pavel_florian.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Pavel & Florian">
+                                        <img src="assets/img/pavel_florian.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Pavel & Florian">
                                     </div>
                                 </div>
                             </div>
@@ -813,13 +910,13 @@
                                     </div>
                                     <!-- ... Images ... -->
                                     <div class="col-md-2">
-                                        <img src="assets/img/geronimo.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Geronimo">
+                                        <img src="assets/img/geronimo.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Geronimo">
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/Visuel%20Shillelagh.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Shillelagh">
+                                        <img src="assets/img/Visuel%20Shillelagh.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Shillelagh">
                                     </div>
                                     <div class="col-md-2">
-                                        <img src="assets/img/hartwin.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Hartwin Dhoore">
+                                        <img src="assets/img/hartwin.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Hartwin Dhoore">
                                     </div>
                                 </div>
                             </div>
@@ -857,10 +954,10 @@
                                         </p>
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/LBA.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Les Bottines Artistiques">
+                                        <img src="assets/img/LBA.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Les Bottines Artistiques">
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/broes.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Broes">
+                                        <img src="assets/img/broes.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Broes">
                                     </div>
                                 </div>
                             </div>
@@ -898,10 +995,10 @@
                                         </p>
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/snaarmaarwaar.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Snaarmaarwaar">
+                                        <img src="assets/img/snaarmaarwaar.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Snaarmaarwaar">
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/wouter_en_de_draak.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Wouter en de Draak">
+                                        <img src="assets/img/wouter_en_de_draak.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Wouter en de Draak">
                                     </div>
                                 </div>
                             </div>
@@ -939,10 +1036,10 @@
                                         </p>
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/hot_griselda.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Hot Griselda">
+                                        <img src="assets/img/hot_griselda.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Hot Griselda">
                                     </div>
                                     <div class="col-md-4">
-                                        <img src="assets/img/tandem.jpg" class="img-fluid rounded-3 card-band-img" alt="Bandpicture of Tandem">
+                                        <img src="assets/img/tandem.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Tandem">
                                     </div>
                                 </div>
                             </div>
@@ -958,7 +1055,7 @@
                     <hr class="hr">
                     <div class="row">
                         <div class="col-md-6">
-                            <img src="assets/img/Cabal%20entree.webp" class="img-fluid rounded-3" style="height: 40vh; object-fit: cover" alt="Main dance hall with bar">
+                            <img src="assets/img/Cabal%20entree.webp" class="img-fluid rounded-3 hero-img" alt="Main dance hall with bar" loading="lazy">
                         </div>
                         <div class="col-md-6">
                             <p class="lead" lang="nl">
@@ -993,10 +1090,10 @@
             <div class="container px-4 px-lg-5">
                 <ul class="list-inline mb-5">
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/cabalfolk"><i class="icon-social-facebook"></i></a>
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/cabalfolk" aria-label="Facebook"><i class="icon-social-facebook" aria-hidden="true"></i></a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/cabalfolk/"><i class="icon-social-instagram"></i></a>
+                        <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/cabalfolk/" aria-label="Instagram"><i class="icon-social-instagram" aria-hidden="true"></i></a>
                     </li>
                 </ul>
                 <p class="small mb-0">Copyright &copy; CaBal 2022</p>

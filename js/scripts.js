@@ -4,30 +4,58 @@
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-stylish-portfolio/blob/master/LICENSE)
 */
 
-function getBrowserLanguage() {
-    let supportedLanguages = ['nl', 'fr']; // The list of supported languages
-    let browserLanguage = navigator.language.split('-')[0]; // Get the browser's language code
+/**
+ * Get the user's preferred language from localStorage or browser settings
+ * @returns {string} Language code ('nl' or 'fr')
+ */
+function getPreferredLanguage() {
+    var supportedLanguages = ['nl', 'fr'];
 
-    // Check if the browser language is in the supported languages list
+    // First check localStorage for saved preference
+    var savedLanguage = localStorage.getItem('cabal-language');
+    if (savedLanguage && supportedLanguages.indexOf(savedLanguage) !== -1) {
+        return savedLanguage;
+    }
+
+    // Fall back to browser language
+    var browserLanguage = navigator.language.split('-')[0];
     if (supportedLanguages.indexOf(browserLanguage) !== -1) {
         return browserLanguage;
     }
 
-    // If not found, return default language
-    return 'nl'; // Default to Dutch if the browser language is not supported
+    // Default to Dutch
+    return 'nl';
 }
 
+/**
+ * Change the displayed language and save preference
+ * @param {string} language - Language code ('nl' or 'fr')
+ */
 function changeLanguage(language) {
-    // Hide all elements
-    document.querySelectorAll('[lang]').forEach(function(el) {
-        el.style.display = 'none';
-    });
+    // Save preference to localStorage
+    localStorage.setItem('cabal-language', language);
 
-    // Show only elements with the selected language
-    document.querySelectorAll('[lang="' + language + '"]').forEach(function(el) {
-        el.style.display = '';
-    });
+    // Update the html lang attribute
+    document.documentElement.lang = language;
+
+    // Hide all language-specific elements
+    var allLangElements = document.querySelectorAll('[lang="nl"], [lang="fr"]');
+    for (var i = 0; i < allLangElements.length; i++) {
+        allLangElements[i].style.display = 'none';
+    }
+
+    // Show elements with the selected language
+    var selectedLangElements = document.querySelectorAll('[lang="' + language + '"]');
+    for (var j = 0; j < selectedLangElements.length; j++) {
+        selectedLangElements[j].style.display = '';
+    }
 }
 
-// Initialize the page with the default language
-changeLanguage(getBrowserLanguage());
+// Initialize the page with the preferred language when DOM is ready
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', function() {
+        changeLanguage(getPreferredLanguage());
+    });
+} else {
+    changeLanguage(getPreferredLanguage());
+}
