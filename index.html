@@ -14,6 +14,7 @@
         <!-- Hreflang for language alternates -->
         <link rel="alternate" hreflang="nl" href="https://www.cabalfolk.be/" />
         <link rel="alternate" hreflang="fr" href="https://www.cabalfolk.be/" />
+        <link rel="alternate" hreflang="en" href="https://www.cabalfolk.be/" />
         <link rel="alternate" hreflang="x-default" href="https://www.cabalfolk.be/" />
 
         <!-- Open Graph / Facebook -->
@@ -22,14 +23,20 @@
         <meta property="og:title" content="CaBal - Balfolk Kortrijk" />
         <meta property="og:description" content="CaBal brengt toegankelijke internationale balfolk voor jong en oud. Initiatie met daaropvolgend twee sets baldansen met twee bands per avond." />
         <meta property="og:image" content="https://www.cabalfolk.be/assets/img/Cabal8maart2024_thomasgrin-73.webp" />
+        <meta property="og:image:width" content="1600" />
+        <meta property="og:image:height" content="1067" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:site_name" content="CaBal - Balfolk Kortrijk" />
         <meta property="og:locale" content="nl_BE" />
         <meta property="og:locale:alternate" content="fr_BE" />
+        <meta property="og:locale:alternate" content="en_GB" />
 
         <!-- Twitter Card -->
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="CaBal - Balfolk Kortrijk" />
         <meta name="twitter:description" content="CaBal brengt toegankelijke internationale balfolk voor jong en oud. Initiatie met daaropvolgend twee sets baldansen met twee bands per avond." />
         <meta name="twitter:image" content="https://www.cabalfolk.be/assets/img/Cabal8maart2024_thomasgrin-73.webp" />
+        <meta name="twitter:image:alt" content="People dancing at a CaBal balfolk evening with live musicians on stage" />
 
         <!-- Favicon-->
         <link rel="apple-touch-icon" sizes="57x57" href="assets/favicon/apple-icon-57x57.png">
@@ -60,7 +67,7 @@
         <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.min.css" rel="stylesheet" />
         <!-- Google fonts with display=swap for better performance -->
         <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet" />
-        <link href="css/styles.css" rel="stylesheet" />
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
         <link href="css/style.css" rel="stylesheet" />
 
         <!-- Structured Data (JSON-LD) for SEO -->
@@ -79,6 +86,12 @@
                 "postalCode": "8500",
                 "addressCountry": "BE"
             },
+            "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "Customer Service",
+                "telephone": "+32-476-60-89-45",
+                "email": "info@cabalfolk.be"
+            },
             "sameAs": [
                 "https://www.facebook.com/cabalfolk",
                 "https://www.instagram.com/cabalfolk/"
@@ -86,50 +99,123 @@
         }
         </script>
         <script type="application/ld+json">
-        {
+        [{
             "@context": "https://schema.org",
             "@type": "Event",
-            "name": "CaBal Balfolk - Duo Nello & Bargainatt",
-            "description": "Balfolk avond met Duo Nello (FR) en Bargainatt (FR). Inclusief dansinitiatie.",
-            "startDate": "2026-01-23T19:15:00+01:00",
-            "endDate": "2026-01-24T00:30:00+01:00",
+            "name": "CaBal Balfolk - Warmoes & Hartwin & Ross Grant",
+            "description": "Balfolk evening with Warmoes and Hartwin & Ross Grant (UK). Includes dance initiation.",
+            "startDate": "2026-03-20T19:15:00+01:00",
+            "endDate": "2026-03-21T00:30:00+01:00",
             "eventStatus": "https://schema.org/EventScheduled",
             "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
             "location": {
                 "@type": "Place",
                 "name": "JC Tranzit",
-                "address": {
-                    "@type": "PostalAddress",
-                    "streetAddress": "Nelson Mandelaplein 17",
-                    "addressLocality": "Kortrijk",
-                    "postalCode": "8500",
-                    "addressCountry": "BE"
-                }
+                "address": { "@type": "PostalAddress", "streetAddress": "Nelson Mandelaplein 17", "addressLocality": "Kortrijk", "postalCode": "8500", "addressCountry": "BE" }
             },
-            "image": "https://www.cabalfolk.be/assets/img/duo_nello.webp",
-            "offers": {
-                "@type": "Offer",
-                "price": "22",
-                "priceCurrency": "EUR",
-                "url": "https://www.event-tickets.be/Event/B9dLTRCepski2djd67ufkKszYYbVzyX5sRRKHbge",
-                "availability": "https://schema.org/InStock"
+            "image": "https://www.cabalfolk.be/assets/img/warmoes2.webp",
+            "offers": { "@type": "Offer", "price": "20", "priceCurrency": "EUR", "url": "https://www.event-tickets.be/Event/uHz3NgsY8EF779zf5Wvtqtw5Nx2jJPPCtUyeR9kB", "availability": "https://schema.org/InStock" },
+            "performer": [{ "@type": "MusicGroup", "name": "Warmoes" }, { "@type": "MusicGroup", "name": "Hartwin & Ross Grant" }],
+            "organizer": { "@type": "Organization", "name": "CaBal", "url": "https://www.cabalfolk.be" }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "CaBal Balfolk - Supernovas & Tandem",
+            "description": "Balfolk evening with Supernovas (FR) and Tandem. Includes dance initiation.",
+            "startDate": "2026-05-14T19:15:00+02:00",
+            "endDate": "2026-05-15T00:30:00+02:00",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+                "@type": "Place",
+                "name": "JC Tranzit",
+                "address": { "@type": "PostalAddress", "streetAddress": "Nelson Mandelaplein 17", "addressLocality": "Kortrijk", "postalCode": "8500", "addressCountry": "BE" }
             },
-            "performer": [
-                {
-                    "@type": "MusicGroup",
-                    "name": "Duo Nello"
-                },
-                {
-                    "@type": "MusicGroup",
-                    "name": "Bargainatt"
-                }
+            "image": "https://www.cabalfolk.be/assets/img/supernovas.jpg",
+            "offers": { "@type": "Offer", "price": "20", "priceCurrency": "EUR", "url": "https://www.event-tickets.be/Event/E18PHZnYzuW6ji1ggwDKmVcjyr4kf5hcrNXzbmFu", "availability": "https://schema.org/InStock" },
+            "performer": [{ "@type": "MusicGroup", "name": "Supernovas" }, { "@type": "MusicGroup", "name": "Tandem" }],
+            "organizer": { "@type": "Organization", "name": "CaBal", "url": "https://www.cabalfolk.be" }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "Trad Records Label Night",
+            "description": "Showcase concert and non-stop balfolk evening featuring Naragonia Quartet, Thalas, Hartwin Trio, Airboxes, Ward Dhoore Band and Flo.",
+            "startDate": "2026-06-13T16:00:00+02:00",
+            "endDate": "2026-06-14T01:00:00+02:00",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+                "@type": "Place",
+                "name": "JC Tranzit",
+                "address": { "@type": "PostalAddress", "streetAddress": "Nelson Mandelaplein 17", "addressLocality": "Kortrijk", "postalCode": "8500", "addressCountry": "BE" }
+            },
+            "image": "https://www.cabalfolk.be/assets/img/label%20night.jpg",
+            "offers": [
+                { "@type": "Offer", "name": "Early Bird", "price": "33", "priceCurrency": "EUR", "url": "https://www.event-tickets.be/Event/5EKVzb2mgKihjetiHp2WBX6K8FfDijpL6jAyQykt", "availability": "https://schema.org/InStock" },
+                { "@type": "Offer", "name": "Standard", "price": "37", "priceCurrency": "EUR", "url": "https://www.event-tickets.be/Event/5EKVzb2mgKihjetiHp2WBX6K8FfDijpL6jAyQykt", "availability": "https://schema.org/InStock" }
             ],
-            "organizer": {
-                "@type": "Organization",
-                "name": "CaBal",
-                "url": "https://www.cabalfolk.be"
-            }
-        }
+            "performer": [{ "@type": "MusicGroup", "name": "Naragonia Quartet" }, { "@type": "MusicGroup", "name": "Thalas" }, { "@type": "MusicGroup", "name": "Hartwin Trio" }, { "@type": "MusicGroup", "name": "Airboxes" }, { "@type": "MusicGroup", "name": "Ward Dhoore Band" }, { "@type": "MusicGroup", "name": "Flo" }],
+            "organizer": { "@type": "Organization", "name": "CaBal", "url": "https://www.cabalfolk.be" }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "CaBal Balfolk - Entre Deux & Snaarmaarwaar",
+            "description": "Balfolk evening with Entre Deux and Snaarmaarwaar. Includes dance initiation.",
+            "startDate": "2026-09-25T19:15:00+02:00",
+            "endDate": "2026-09-26T00:30:00+02:00",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+                "@type": "Place",
+                "name": "JC Tranzit",
+                "address": { "@type": "PostalAddress", "streetAddress": "Nelson Mandelaplein 17", "addressLocality": "Kortrijk", "postalCode": "8500", "addressCountry": "BE" }
+            },
+            "image": "https://www.cabalfolk.be/assets/img/entre%20deux.jpeg",
+            "offers": { "@type": "Offer", "price": "20", "priceCurrency": "EUR", "url": "https://www.event-tickets.be/Event/sZnPVzC34GRmNGsiuMUg3x4gKSCyQmK4L4xgvZb1", "availability": "https://schema.org/InStock" },
+            "performer": [{ "@type": "MusicGroup", "name": "Entre Deux" }, { "@type": "MusicGroup", "name": "Snaarmaarwaar" }],
+            "organizer": { "@type": "Organization", "name": "CaBal", "url": "https://www.cabalfolk.be" }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "CaBal Balfolk - Zéphyr Combo & Bamako Express",
+            "description": "Balfolk evening with Zéphyr Combo (CH) and Bamako Express. Includes dance initiation.",
+            "startDate": "2026-11-13T19:15:00+01:00",
+            "endDate": "2026-11-14T00:30:00+01:00",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+                "@type": "Place",
+                "name": "JC Tranzit",
+                "address": { "@type": "PostalAddress", "streetAddress": "Nelson Mandelaplein 17", "addressLocality": "Kortrijk", "postalCode": "8500", "addressCountry": "BE" }
+            },
+            "image": "https://www.cabalfolk.be/assets/img/Bamako%20Express2.webp",
+            "offers": { "@type": "Offer", "price": "20", "priceCurrency": "EUR", "url": "https://www.event-tickets.be/Event/tFjULPZXfC2n7yfDsbd5HefiuNAW87L3DbZX8PS8", "availability": "https://schema.org/InStock" },
+            "performer": [{ "@type": "MusicGroup", "name": "Zéphyr Combo" }, { "@type": "MusicGroup", "name": "Bamako Express" }],
+            "organizer": { "@type": "Organization", "name": "CaBal", "url": "https://www.cabalfolk.be" }
+        },
+        {
+            "@context": "https://schema.org",
+            "@type": "Event",
+            "name": "CaBal Balfolk - Naragonia & Bansk",
+            "description": "Balfolk evening with Naragonia and Bansk. Includes dance initiation.",
+            "startDate": "2026-12-19T19:15:00+01:00",
+            "endDate": "2026-12-20T00:30:00+01:00",
+            "eventStatus": "https://schema.org/EventScheduled",
+            "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+            "location": {
+                "@type": "Place",
+                "name": "JC Tranzit",
+                "address": { "@type": "PostalAddress", "streetAddress": "Nelson Mandelaplein 17", "addressLocality": "Kortrijk", "postalCode": "8500", "addressCountry": "BE" }
+            },
+            "image": "https://www.cabalfolk.be/assets/img/naragonia.jpg",
+            "offers": { "@type": "Offer", "price": "20", "priceCurrency": "EUR", "url": "https://www.event-tickets.be/Event/uJhjmF5hhP4hQAC2Axc1rt5BfJ9gzwpP35ZjC7Af", "availability": "https://schema.org/InStock" },
+            "performer": [{ "@type": "MusicGroup", "name": "Naragonia" }, { "@type": "MusicGroup", "name": "Bansk" }],
+            "organizer": { "@type": "Organization", "name": "CaBal", "url": "https://www.cabalfolk.be" }
+        }]
         </script>
     </head>
     <body id="page-top">
@@ -137,7 +223,7 @@
         <a class="visually-hidden-focusable" href="#about">Skip to main content</a>
 
         <!-- Fixed navbar -->
-        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
+        <nav class="navbar navbar-expand-lg bg-light fixed-top" data-bs-theme="light" id="mainNav">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -145,31 +231,32 @@
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item"><a class="nav-link" href="#about">
-                            <span lang="nl">Info</span><span lang="fr">Infos</span>
+                            <span lang="nl">Info</span><span lang="fr">Infos</span><span lang="en">About</span>
                         </a></li>
                         <li class="nav-item"><a class="nav-link" href="#events">
-                            <span lang="nl">Evenementen</span><span lang="fr">Événements</span>
+                            <span lang="nl">Evenementen</span><span lang="fr">Événements</span><span lang="en">Events</span>
                         </a></li>
                         <li class="nav-item"><a class="nav-link" href="#dance-classes" lang="nl">
                             Danslessen
                         </a></li>
                         <li class="nav-item"><a class="nav-link" href="#previous-events">
-                            <span lang="nl">Vorige Edities</span><span lang="fr">Editions précédentes</span>
+                            <span lang="nl">Vorige Edities</span><span lang="fr">Editions précédentes</span><span lang="en">Previous</span>
                         </a></li>
                         <li class="nav-item"><a class="nav-link" href="#location">
-                            <span lang="nl">Locatie</span><span lang="fr">Lieu</span>
+                            <span lang="nl">Locatie</span><span lang="fr">Lieu</span><span lang="en">Venue</span>
                         </a></li>
                         <li class="nav-item"><a class="nav-link" href="#contact">
-                            <span lang="nl">Contact</span><span lang="fr">Contact</span>
+                            <span lang="nl">Contact</span><span lang="fr">Contact</span><span lang="en">Contact</span>
                         </a></li>
                         <!-- Language Dropdown Toggle -->
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="languageDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                <span lang="nl">Taal</span><span lang="fr">Langue</span>
+                                <span lang="nl">Taal</span><span lang="fr">Langue</span><span lang="en">Language</span>
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="languageDropdown">
                                 <li><button type="button" class="dropdown-item" onclick="changeLanguage('nl')">NL</button></li>
                                 <li><button type="button" class="dropdown-item" onclick="changeLanguage('fr')">FR</button></li>
+                                <li><button type="button" class="dropdown-item" onclick="changeLanguage('en')">EN</button></li>
                             </ul>
                         </li>
                     </ul>
@@ -181,6 +268,7 @@
         <!-- Header -->
         <header class="masthead d-flex align-items-center">
             <div class="container px-4 px-lg-5 text-center">
+                <img src="assets/img/cabal_logo_transparent.webp" class="masthead-logo" alt="CaBal logo – dancing couple" width="1350" height="1800" fetchpriority="high">
             </div>
         </header>
 
@@ -191,18 +279,22 @@
                     <h1 class="mb-5 text-center main-title">CaBal</h1>
                     <hr class="hr">
                     <div class="row gx-4 gx-lg-5 justify-content-center">
-                        <div class="col-lg-6 col-md-4 col-sm-12">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
                             <p class="lead mb-5" lang="nl">
-                                CaBal brengt toegankelijke internationale balfolk voor jong en oud. Je krijgt van ons: initiatie met daaropvolgend twee sets baldansen. Te gast: twee bands per avond met stuk voor stuk kraks van muzikanten.<br/><br/>
+                                CaBal brengt toegankelijke internationale balfolk voor jong en oud. Je krijgt van ons: initiatie met daaropvolgend twee sets baldansen. Te gast: twee bands per avond met stuk voor stuk kraks van muzikanten.<br><br>
                                 Is het folkdansen voor jou een volledig nieuwe wereld? Geen probleem, wij zorgen tijdens de initiatie aan het begin van elke folkavond dat jij een volledig bal kan meedansen met een snelcursus van de belangrijkste basispassen en figuren. Je leert er de basis van bv. de tovercirkel, Andro, Hanterdro, Jig. Deze laatste ken je misschien al van ‘t Smidje?
                             </p>
                             <p class="lead mb-5" lang="fr">
-                                CaBal apporte le balfolk international accessible pour petits et grands. Vous recevez chez nous : initiation suivie de deux séries de bals dansés. Invités : deux groupes par soirée, chacun avec de grands musiciens.<br/><br/>
+                                CaBal apporte le balfolk international accessible pour petits et grands. Vous recevez chez nous : initiation suivie de deux séries de bals dansés. Invités : deux groupes par soirée, chacun avec de grands musiciens.<br><br>
                                 La danse de folk est-elle un tout nouveau monde pour vous ? Pas de problème, lors de l'initiation au début de chaque soirée folk, nous nous assurons que vous puissiez danser un bal complet avec un cours accéléré avec les pas et figures de base les plus importants. Vous apprenez les bases par exemple du cercle circassien, Andro, Hanterdro, Jig. Vous connaissez peut-être déjà une de ces danses?
+                            </p>
+                            <p class="lead mb-5" lang="en">
+                                CaBal brings accessible international balfolk for young and old. We offer: an initiation followed by two sets of ball dances. Featuring: two bands per evening, each with outstanding musicians.<br><br>
+                                Is folk dancing a completely new world for you? No problem! During the initiation at the start of each folk evening, we make sure you can dance an entire ball with a crash course in the most important basic steps and figures. You'll learn the basics of, for example, the Circassian circle, Andro, Hanterdro, and Jig. You might already know one of these dances!
                             </p>
                         </div>
                         <div class="col-lg-6 col-md-8 col-sm-12">
-                            <img src="assets/img/Cabal8maart2024_thomasgrin-73.webp" class="img-fluid rounded-3 hero-img" alt="Group of people dancing with two musicians on stage">
+                            <img src="assets/img/Cabal8maart2024_thomasgrin-73.webp" class="img-fluid rounded-3 hero-img" alt="Group of people dancing with two musicians on stage" width="1600" height="1067" fetchpriority="high">
                         </div>
                     </div>
                 </div>
@@ -212,7 +304,7 @@
             <section class="content-section" id="events">
                 <div class="container px-4 px-lg-5">
                     <div class="content-section-heading">
-                        <div class="text-center"><h2 class="mb-5"><span lang="nl">Evenementen</span><span lang="fr">Événements</span></h2></div>
+                        <div class="text-center"><h2 class="mb-5"><span lang="nl">Evenementen</span><span lang="fr">Événements</span><span lang="en">Events</span></h2></div>
                         <hr class="hr">
 
 
@@ -221,31 +313,33 @@
                         <div class="card bg-light">
                             <div class="card-header">
                                 <!-- Toggle button for collapsible content -->
-                                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardMar2026" aria-expanded="true" aria-controls="collapseCardMar2026">
+                                <button class="btn" type="button" id="headingMar2026" data-bs-toggle="collapse" data-bs-target="#collapseCardMar2026" aria-expanded="true" aria-controls="collapseCardMar2026">
                                     <h4>
                                         <span lang="nl">20 Maart 2026</span>
                                         <span lang="fr">20 Mars 2026</span>
+                                        <span lang="en">20 March 2026</span>
                                     </h4>
                                 </button>
                             </div>
                             <!-- Collapsible card body -->
-                            <div id="collapseCardMar2026" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseCardMar2026" class="collapse show" aria-labelledby="headingMar2026">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-4 lead">
                                             <p class="card-text">
                                                 <span lang="nl">Balfolk avond met</span>
                                                 <span lang="fr">Soirée Balfolk avec</span>
+                                                <span lang="en">Balfolk evening with</span>
                                                 <a href="https://warmoesmusic.be"><b>Warmoes</b></a>
-                                                <span lang="nl">en</span><span lang="fr">et</span> <a href="https://www.hartwin.be"><b>Hartwin & Ross Grant (UK)</b></a>.
+                                                <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://www.hartwin.be"><b>Hartwin & Ross Grant (UK)</b></a>.
                                             <ul>
-                                                <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                                <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                                <li><span lang="nl">20u45: Hartwin & Ross Grant (UK)</span><span lang="fr">20h45: Hartwin & Ross Grant</span></li>
-                                                <li><span lang="nl">22u30: Warmoes</span><span lang="fr">22h30 : Warmoes</span></li>
+                                                <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                                <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                                <li><span lang="nl">20u45: Hartwin & Ross Grant (UK)</span><span lang="fr">20h45: Hartwin & Ross Grant</span><span lang="en">8:45 PM: Hartwin & Ross Grant (UK)</span></li>
+                                                <li><span lang="nl">22u30: Warmoes</span><span lang="fr">22h30 : Warmoes</span><span lang="en">10:30 PM: Warmoes</span></li>
                                             </ul>
                                             <p>
-                                                <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><br>20 euro
+                                                <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><span lang="en">Price:</span><br>20 euro
                                             </p>
                                             <a class="btn btn-secondary btn-spaced" href="https://www.event-tickets.be/Event/uHz3NgsY8EF779zf5Wvtqtw5Nx2jJPPCtUyeR9kB">Tickets</a>
                                         </div>
@@ -266,31 +360,33 @@
                         <div class="card bg-light">
                             <div class="card-header">
                                 <!-- Toggle button for collapsible content -->
-                                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardMay2026" aria-expanded="true" aria-controls="collapseCardMay2026">
+                                <button class="btn" type="button" id="headingMay2026" data-bs-toggle="collapse" data-bs-target="#collapseCardMay2026" aria-expanded="true" aria-controls="collapseCardMay2026">
                                     <h4>
                                         <span lang="nl">14 Mei 2026</span>
                                         <span lang="fr">14 Mai 2026</span>
+                                        <span lang="en">14 May 2026</span>
                                     </h4>
                                 </button>
                             </div>
                             <!-- Collapsible card body -->
-                            <div id="collapseCardMay2026" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseCardMay2026" class="collapse show" aria-labelledby="headingMay2026">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-4 lead">
                                             <p class="card-text">
                                                 <span lang="nl">Balfolk avond met</span>
                                                 <span lang="fr">Soirée Balfolk avec</span>
+                                                <span lang="en">Balfolk evening with</span>
                                                 <a href="https://duosupernovas.wixsite.com/supernovas"><b>Supernovas (FR)</b></a>
-                                                <span lang="nl">en</span><span lang="fr">et</span> <a href="https://www.facebook.com/Tandemfolkduo/"><b>Tandem</b></a>.
+                                                <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://www.facebook.com/Tandemfolkduo/"><b>Tandem</b></a>.
                                             <ul>
-                                                <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                                <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                                <li><span lang="nl">20u45: Tandem</span><span lang="fr">20h45: Tandem</span></li>
-                                                <li><span lang="nl">22u30: Supernovas (FR)</span><span lang="fr">22h30 : Supernovas (FR)</span></li>
+                                                <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                                <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                                <li><span lang="nl">20u45: Tandem</span><span lang="fr">20h45: Tandem</span><span lang="en">8:45 PM: Tandem</span></li>
+                                                <li><span lang="nl">22u30: Supernovas (FR)</span><span lang="fr">22h30 : Supernovas (FR)</span><span lang="en">10:30 PM: Supernovas (FR)</span></li>
                                             </ul>
                                             <p>
-                                                <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><br>20 euro
+                                                <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><span lang="en">Price:</span><br>20 euro
                                             </p>
                                             <a class="btn btn-secondary btn-spaced" href="https://www.event-tickets.be/Event/E18PHZnYzuW6ji1ggwDKmVcjyr4kf5hcrNXzbmFu">Tickets</a>
                                         </div>
@@ -311,15 +407,16 @@
                         <div class="card bg-light">
                             <div class="card-header">
                                 <!-- Toggle button for collapsible content -->
-                                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardJune2026" aria-expanded="true" aria-controls="collapseCardJune2026">
+                                <button class="btn" type="button" id="headingJune2026" data-bs-toggle="collapse" data-bs-target="#collapseCardJune2026" aria-expanded="true" aria-controls="collapseCardJune2026">
                                     <h4>
                                         <span lang="nl">13 Juni 2026</span>
                                         <span lang="fr">13 Juin 2026</span>
+                                        <span lang="en">13 June 2026</span>
                                         <span>- Trad Records Label Night</span>
                                     </h4>
                                 </button>
                             </div>
-                            <div id="collapseCardJune2026" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseCardJune2026" class="collapse show" aria-labelledby="headingJune2026">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="row" style="margin-bottom: 10px;">
@@ -327,12 +424,14 @@
                                                 <p class="card-text">
                                                     <span lang="nl"><b>Showcase concert</b><br> Deuren 16u <br> Start 16u30</span>
                                                     <span lang="fr"><b>Concert Showcase</b><br> Ouverture 16h <br> Début 16h30</span>
+                                                    <span lang="en"><b>Showcase concert</b><br> Doors 4:00 PM <br> Start 4:30 PM</span>
                                                 </p>
                                             </div>
                                             <div class="col-md-6 lead">
                                                 <p class="card-text">
                                                     <span lang="nl"><b>Non-Stop Balfolk avond</b> <br>20u30 tot 1u</span>
                                                     <span lang="fr"><b>Soirée Balfolk Non-Stop</b> <br> De 20h30 à 1h</span>
+                                                    <span lang="en"><b>Non-Stop Balfolk evening</b> <br>8:30 PM to 1:00 AM</span>
                                                 </p>
                                             </div>
                                         </div>
@@ -358,22 +457,23 @@
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="cold-md-12 lead text-center">
+                                        <div class="col-md-12 lead text-center">
                                             <p>
                                                     <span lang="nl">Showcase concert is luisterend in twee delen, de bands volgen zich razendsnel op! <br>Tussen het showcase concert en bal zal er een foodtruck (vegan friendly) aanwezig zijn.</span>
-                                                    <span lang="fr">Le concert showcase se déroule en deux parties, les groupes se succèdent à un rythme effréné ! <br>Entre le concert showcase et le bal, un food truck (vegan friendly) sera présent.
+                                                    <span lang="fr">Le concert showcase se déroule en deux parties, les groupes se succèdent à un rythme effréné ! <br>Entre le concert showcase et le bal, un food truck (vegan friendly) sera présent.</span>
+                                                    <span lang="en">The showcase concert is a listening concert in two parts, with bands following each other at lightning speed! <br>Between the showcase concert and the ball, a food truck (vegan friendly) will be available.</span>
                                             </p>
                                         </div>
                                         <div class="col-md-12 lead text-center">
                                             <p>
                                                 Early Bird: 33 euro <br>
-                                                <span lang="nl">Prijs:</span><span lang="fr">Prix:</span> 37 euro <br>
+                                                <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><span lang="en">Price:</span> 37 euro <br>
                                             </p>
                                             <a class="btn btn-secondary btn-spaced" href="https://www.event-tickets.be/Event/5EKVzb2mgKihjetiHp2WBX6K8FfDijpL6jAyQykt">Tickets</a>
                                         </div>
                                         <!-- ... Images ... -->
                                         <div class="col-md-12 text-center">
-                                            <img src="assets/img/label%20night.jpg" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Poster of Trad Records Label Night">
+                                            <img src="assets/img/label%20night.jpg" class="img-fluid rounded-3 card-poster-img" loading="lazy" alt="Poster of Trad Records Label Night">
                                         </div>
                                     </div>
                                 </div>
@@ -385,31 +485,33 @@
                         <div class="card bg-light">
                             <div class="card-header">
                                 <!-- Toggle button for collapsible content -->
-                                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardSeptember2026" aria-expanded="true" aria-controls="collapseCardSeptember2026">
+                                <button class="btn" type="button" id="headingSeptember2026" data-bs-toggle="collapse" data-bs-target="#collapseCardSeptember2026" aria-expanded="true" aria-controls="collapseCardSeptember2026">
                                     <h4>
                                         <span lang="nl">25 September 2026</span>
                                         <span lang="fr">25 Septembre 2026</span>
+                                        <span lang="en">25 September 2026</span>
                                     </h4>
                                 </button>
                             </div>
                             <!-- Collapsible card body -->
-                            <div id="collapseCardSeptember2026" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseCardSeptember2026" class="collapse show" aria-labelledby="headingSeptember2026">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-4 lead">
                                             <p class="card-text">
                                                 <span lang="nl">Balfolk avond met</span>
                                                 <span lang="fr">Soirée Balfolk avec</span>
+                                                <span lang="en">Balfolk evening with</span>
                                                 <a href="https://www.facebook.com/Entredeuxmusic/"><b>Entre Deux</b></a>
-                                                <span lang="nl">en</span><span lang="fr">et</span> <a href="https://www.snaarmaarwaar.be"><b>Snaarmaarwaar</b></a>.
+                                                <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://www.snaarmaarwaar.be"><b>Snaarmaarwaar</b></a>.
                                             <ul>
-                                                <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                                <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                                <li><span lang="nl">20u45: Entre Deux</span><span lang="fr">20h45: Entre Deux</span></li>
-                                                <li><span lang="nl">22u30: Snaarmaarwaar</span><span lang="fr">22h30 : Snaarmaarwaar</span></li>
+                                                <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                                <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                                <li><span lang="nl">20u45: Entre Deux</span><span lang="fr">20h45: Entre Deux</span><span lang="en">8:45 PM: Entre Deux</span></li>
+                                                <li><span lang="nl">22u30: Snaarmaarwaar</span><span lang="fr">22h30 : Snaarmaarwaar</span><span lang="en">10:30 PM: Snaarmaarwaar</span></li>
                                             </ul>
                                             <p>
-                                                <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><br>20 euro
+                                                <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><span lang="en">Price:</span><br>20 euro
                                             </p>
                                             <a class="btn btn-secondary btn-spaced" href="https://www.event-tickets.be/Event/sZnPVzC34GRmNGsiuMUg3x4gKSCyQmK4L4xgvZb1">Tickets</a>
                                         </div>
@@ -430,31 +532,33 @@
                         <div class="card bg-light">
                             <div class="card-header">
                                 <!-- Toggle button for collapsible content -->
-                                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardNovember2026" aria-expanded="true" aria-controls="collapseCardNovember2026">
+                                <button class="btn" type="button" id="headingNovember2026" data-bs-toggle="collapse" data-bs-target="#collapseCardNovember2026" aria-expanded="true" aria-controls="collapseCardNovember2026">
                                     <h4>
                                         <span lang="nl">13 November 2026</span>
                                         <span lang="fr">13 Novembre 2026</span>
+                                        <span lang="en">13 November 2026</span>
                                     </h4>
                                 </button>
                             </div>
                             <!-- Collapsible card body -->
-                            <div id="collapseCardNovember2026" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseCardNovember2026" class="collapse show" aria-labelledby="headingNovember2026">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-4 lead">
                                             <p class="card-text">
                                                 <span lang="nl">Balfolk avond met</span>
                                                 <span lang="fr">Soirée Balfolk avec</span>
+                                                <span lang="en">Balfolk evening with</span>
                                                 <a href="https://zephyrcombo.ch"><b>Zéphyr Combo (CH)</b></a>
-                                                <span lang="nl">en</span><span lang="fr">et</span> <a href="https://vi.be/platform/BamakoExpress"><b>Bamako Express</b></a>.
+                                                <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://vi.be/platform/BamakoExpress"><b>Bamako Express</b></a>.
                                             <ul>
-                                                <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                                <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                                <li><span lang="nl">20u45: Zéphyr Combo (CH)</span><span lang="fr">20h45: Zéphyr Combo (CH)</span></li>
-                                                <li><span lang="nl">22u30: Bamako Express</span><span lang="fr">22h30 : Bamako Express</span></li>
+                                                <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                                <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                                <li><span lang="nl">20u45: Zéphyr Combo (CH)</span><span lang="fr">20h45: Zéphyr Combo (CH)</span><span lang="en">8:45 PM: Zéphyr Combo (CH)</span></li>
+                                                <li><span lang="nl">22u30: Bamako Express</span><span lang="fr">22h30 : Bamako Express</span><span lang="en">10:30 PM: Bamako Express</span></li>
                                             </ul>
                                             <p>
-                                                <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><br>20 euro
+                                                <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><span lang="en">Price:</span><br>20 euro
                                             </p>
                                             <a class="btn btn-secondary btn-spaced" href="https://www.event-tickets.be/Event/tFjULPZXfC2n7yfDsbd5HefiuNAW87L3DbZX8PS8">Tickets</a>
                                         </div>
@@ -475,32 +579,34 @@
                         <div class="card bg-light">
                             <div class="card-header">
                                 <!-- Toggle button for collapsible content -->
-                                <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardDecember2026" aria-expanded="true" aria-controls="collapseCardDecember2026">
+                                <button class="btn" type="button" id="headingDecember2026" data-bs-toggle="collapse" data-bs-target="#collapseCardDecember2026" aria-expanded="true" aria-controls="collapseCardDecember2026">
                                     <h4>
                                         <span lang="nl">19 December 2026</span>
                                         <span lang="fr">19 Decembre 2026</span>
+                                        <span lang="en">19 December 2026</span>
                                     </h4>
                                 </button>
                             </div>
 
                             <!-- Collapsible card body -->
-                            <div id="collapseCardDecember2026" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                            <div id="collapseCardDecember2026" class="collapse show" aria-labelledby="headingDecember2026">
                                 <div class="card-body">
                                     <div class="row">
                                         <div class="col-md-4 lead">
                                             <p class="card-text">
                                                 <span lang="nl">Balfolk avond met</span>
                                                 <span lang="fr">Soirée Balfolk avec</span>
+                                                <span lang="en">Balfolk evening with</span>
                                                 <a href="https://www.naragonia.com"><b>Naragonia</b></a>
-                                                <span lang="nl">en</span><span lang="fr">et</span> <a href="https://www.elkedemeester.be/bansk/"><b>Bansk</b></a>.
+                                                <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://www.elkedemeester.be/bansk/"><b>Bansk</b></a>.
                                             <ul>
-                                                <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                                <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                                <li><span lang="nl">20u45: Bansk</span><span lang="fr">20h45: Bansk</span></li>
-                                                <li><span lang="nl">22u30: Naragonia</span><span lang="fr">22h30 : Naragonia</span></li>
+                                                <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                                <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                                <li><span lang="nl">20u45: Bansk</span><span lang="fr">20h45: Bansk</span><span lang="en">8:45 PM: Bansk</span></li>
+                                                <li><span lang="nl">22u30: Naragonia</span><span lang="fr">22h30 : Naragonia</span><span lang="en">10:30 PM: Naragonia</span></li>
                                             </ul>
                                             <p>
-                                                <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><br>20 euro
+                                                <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><span lang="en">Price:</span><br>20 euro
                                             </p>
                                             <a class="btn btn-secondary btn-spaced" href="https://www.event-tickets.be/Event/uJhjmF5hhP4hQAC2Axc1rt5BfJ9gzwpP35ZjC7Af">Tickets</a>
                                         </div>
@@ -523,11 +629,11 @@
             <!-- Dance Classes -->
             <section class="content-section bg-light" id="dance-classes" lang="nl">
                 <div class="container px-4 px-lg-5 ">
-                    <h1 class="mb-4 text-center"><span lang="nl">Danslessen</span><span lang="fr">Cours de danses</span></h1>
+                    <h1 class="mb-4 text-center"><span lang="nl">Danslessen</span><span lang="fr">Cours de danses</span><span lang="en">Dance Classes</span></h1>
                     <hr class="hr">
                     <div class="row section-row">
                         <div class="col-md-3">
-                            <img src="assets/img/PJ-Dancing.webp" class="img-fluid rounded-3 hero-img-tall" alt="Pieter-Jan Hantson teaching a couple dance" loading="lazy">
+                            <img src="assets/img/PJ-Dancing.webp" class="img-fluid rounded-3 hero-img-tall" alt="Pieter-Jan Hantson teaching a couple dance" width="853" height="1280">
                         </div>
                         <div class="col-md-9">
                             <p class="lead">
@@ -535,7 +641,7 @@
                                 Voor de pauze verkennen we de basis: kadans, ritme, beweging en vooral dansplezier. Stap voor stap groeit je gevoel voor de dans, tot ook je voeten precies weten waarheen (en je links van rechts kunt onderscheiden).
                                 Na de pauze verdiepen we die ervaring. We duiken in dynamiek en muzikaliteit, leren enkele uitdagendere dansen en spelen met verfijning, connectie en expressie – daar waar dans en verbinding samenvallen.
                             </p>
-                            <br/>
+                            <br>
                             <a class="btn btn-secondary dropdown-toggle btn-spaced" href="#dance-info" aria-controls="dance-info" data-bs-toggle="collapse" aria-expanded="false">Alle Info</a>
                             <div class="collapse" id="dance-info">
                                 <hr>
@@ -567,22 +673,23 @@
             <!-- Previous Events -->
             <section class="content-section" id="previous-events">
                 <div class="container px-4 px-lg-5">
-                    <div class="text-center"><h2 class="mb-5"><span lang="nl">Voorgaande edities</span><span lang="fr">Éditions précédentes</span></h2></div>
+                    <div class="text-center"><h2 class="mb-5"><span lang="nl">Voorgaande edities</span><span lang="fr">Éditions précédentes</span><span lang="en">Previous Events</span></h2></div>
 
                     <hr class="hr">
 
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardJan2026" aria-expanded="true" aria-controls="collapseCardJan2026">
+                            <button class="btn" type="button" id="headingJan2026" data-bs-toggle="collapse" data-bs-target="#collapseCardJan2026" aria-expanded="true" aria-controls="collapseCardJan2026">
                                 <h4>
                                     <span lang="nl">23 Januari 2026</span>
                                     <span lang="fr">23 Janvier 2026</span>
+                                    <span lang="en">23 January 2026</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardJan2026" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardJan2026" class="collapse" aria-labelledby="headingJan2026">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -590,16 +697,17 @@
                                             <span lang="nl">Balfolk avond met</span>
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://gabrielchiapello.fr/duo-nello"><b>Duo Nello (FR)</b></a>
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="http://www.bargainatt.com"><b>Bargainatt (FR)</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="http://www.bargainatt.com"><b>Bargainatt (FR)</b></a>.
                                         <ul>
-                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u45: Duo Nello</span><span lang="fr">20h45: Duo Nello</span></li>
-                                            <li><span lang="nl">22u30: Bargainatt</span><span lang="fr">22h30 : Bargainatt</span></li>
+                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u45: Duo Nello</span><span lang="fr">20h45: Duo Nello</span><span lang="en">8:45 PM: Duo Nello</span></li>
+                                            <li><span lang="nl">22u30: Bargainatt</span><span lang="fr">22h30 : Bargainatt</span><span lang="en">10:30 PM: Bargainatt</span></li>
                                         </ul>
                                         <p>
                                             <span lang="nl">Op zondag 25/01 spelen dezelfde bands ook op <a href="https://frissefolk.be/nl/event-nl/bal-duo-nello-&-bargainatt-la-tricoterie/1285/">Frisse Folk (Brussel)</a>. Steun folkorganisatoren en -muzikanten, doe jezelf een plezier… en ga gewoon naar beide bals! Alvast bedankt!</span>
-                                            <span lang="fr">Le dimanche 25/01, les mêmes groupes jouent aussi à <a href="https://frissefolk.be/fr/evenement/bal-duo-nello-&-bargainatt-la-tricoterie/1285/">Frisse Folk (Bruxelles)</a>. Soutenez les organisateurs et les musiciens folk, faites-vous plaisir… et allez simplement aux deux bals ! Merci d’avance !</span>
+                                            <span lang="fr">Le dimanche 25/01, les mêmes groupes jouent aussi à <a href="https://frissefolk.be/fr/evenement/bal-duo-nello-&-bargainatt-la-tricoterie/1285/">Frisse Folk (Bruxelles)</a>. Soutenez les organisateurs et les musiciens folk, faites-vous plaisir… et allez simplement aux deux bals ! Merci d'avance !</span>
+                                            <span lang="en">On Sunday 25/01, the same bands also play at <a href="https://frissefolk.be/nl/event-nl/bal-duo-nello-&-bargainatt-la-tricoterie/1285/">Frisse Folk (Brussels)</a>. Support folk organisers and musicians, treat yourself... and simply go to both balls! Thanks in advance!</span>
                                         </p>
                                     </div>
                                     <!-- ... Images ... -->
@@ -619,15 +727,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardDec2025" aria-expanded="false" aria-controls="collapseCardDec2025">
+                            <button class="btn" type="button" id="headingDec2025" data-bs-toggle="collapse" data-bs-target="#collapseCardDec2025" aria-expanded="false" aria-controls="collapseCardDec2025">
                                 <h4>
                                     <span lang="nl">13 December 2025</span>
                                     <span lang="fr">13 Décembre 2025</span>
+                                    <span lang="en">13 December 2025</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardDec2025" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardDec2025" class="collapse" aria-labelledby="headingDec2025">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -635,12 +744,12 @@
                                             <span lang="nl">Balfolk avond met</span>
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://www.cardboardcabin.be/"><b>Cardboard Cabin</b></a>
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="https://cveprod.org/ciacboum/"><b>Ciac Boum (FR)</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://cveprod.org/ciacboum/"><b>Ciac Boum (FR)</b></a>.
                                         <ul>
-                                            <li><span lang="nl">19u45: Deuren open</span><span lang="fr">19h45 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">20u: Dans initiatie</span><span lang="fr">20h : Initiation à la danse</span></li>
-                                            <li><span lang="nl">21u: Cardboard Cabin</span><span lang="fr">21h: Cardboard Cabin</span></li>
-                                            <li><span lang="nl">22u45: Ciac Boum</span><span lang="fr">22h45 : Ciac Boum</span></li>
+                                            <li><span lang="nl">19u45: Deuren open</span><span lang="fr">19h45 : Ouverture des portes</span><span lang="en">7:45 PM: Doors open</span></li>
+                                            <li><span lang="nl">20u: Dans initiatie</span><span lang="fr">20h : Initiation à la danse</span><span lang="en">8:00 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">21u: Cardboard Cabin</span><span lang="fr">21h: Cardboard Cabin</span><span lang="en">9:00 PM: Cardboard Cabin</span></li>
+                                            <li><span lang="nl">22u45: Ciac Boum</span><span lang="fr">22h45 : Ciac Boum</span><span lang="en">10:45 PM: Ciac Boum</span></li>
                                         </ul>
                                         </p>
                                     </div>
@@ -661,15 +770,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardNov2025" aria-expanded="false" aria-controls="collapseCardNov2025">
+                            <button class="btn" type="button" id="headingNov2025" data-bs-toggle="collapse" data-bs-target="#collapseCardNov2025" aria-expanded="false" aria-controls="collapseCardNov2025">
                                 <h4>
                                     <span lang="nl">14 November 2025</span>
                                     <span lang="fr">14 Novembre 2025</span>
+                                    <span lang="en">14 November 2025</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardNov2025" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardNov2025" class="collapse" aria-labelledby="headingNov2025">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -677,15 +787,15 @@
                                             <span lang="nl">Balfolk avond met</span>
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://www.viorel.be/"><b>Viorel</b></a>,
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="https://www.emilyandthesimons.com/"><b>Emily And The Simons (UK/BE)</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://www.emilyandthesimons.com/"><b>Emily And The Simons (UK/BE)</b></a>.
                                         <ul>
-                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u30: Viorel</span><span lang="fr">20h30: Viorel</span></li>
-                                            <li><span lang="nl">22u15: Emily And The Simons</span><span lang="fr">22h15 : Emily And The Simons</span></li>
+                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u30: Viorel</span><span lang="fr">20h30: Viorel</span><span lang="en">8:30 PM: Viorel</span></li>
+                                            <li><span lang="nl">22u15: Emily And The Simons</span><span lang="fr">22h15 : Emily And The Simons</span><span lang="en">10:15 PM: Emily And The Simons</span></li>
                                         </ul>
                                         <p>
-                                            <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><br>20 euro
+                                            <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><span lang="en">Price:</span><br>20 euro
                                         </p>
 
                                     </div>
@@ -706,15 +816,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardSep2025" aria-expanded="true" aria-controls="collapseCardSep2025">
+                            <button class="btn" type="button" id="headingSep2025" data-bs-toggle="collapse" data-bs-target="#collapseCardSep2025" aria-expanded="true" aria-controls="collapseCardSep2025">
                                 <h4>
                                     <span lang="nl">19 September 2025</span>
                                     <span lang="fr">19 Septembre 2025</span>
+                                    <span lang="en">19 September 2025</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardSep2025" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardSep2025" class="collapse" aria-labelledby="headingSep2025">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -722,12 +833,12 @@
                                             <span lang="nl">Balfolk avond met</span>
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://www.anouksanczuk.be/"><b>Duo Gambetta - Sanczuk (IT/BE)</b></a>,
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="https://www.kabalmusic.com/"><b>KABÁL (NL/BE)</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://www.kabalmusic.com/"><b>KABÁL (NL/BE)</b></a>.
                                         <ul>
-                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u30: Duo Gambetta - Sanczuk</span><span lang="fr">20h30: Duo Gambetta - Sanczuk</span></li>
-                                            <li><span lang="nl">22u15: KABÁL</span><span lang="fr">22h15 : KABÁL</span></li>
+                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u30: Duo Gambetta - Sanczuk</span><span lang="fr">20h30: Duo Gambetta - Sanczuk</span><span lang="en">8:30 PM: Duo Gambetta - Sanczuk</span></li>
+                                            <li><span lang="nl">22u15: KABÁL</span><span lang="fr">22h15 : KABÁL</span><span lang="en">10:15 PM: KABÁL</span></li>
                                         </ul>
 
                                     </div>
@@ -748,15 +859,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardJun2025" aria-expanded="true" aria-controls="collapseCardJun2025">
+                            <button class="btn" type="button" id="headingJun2025" data-bs-toggle="collapse" data-bs-target="#collapseCardJun2025" aria-expanded="true" aria-controls="collapseCardJun2025">
                                 <h4>
                                     <span lang="nl">13 Juni 2025</span>
                                     <span lang="fr">13 Juin 2025</span>
+                                    <span lang="en">13 June 2025</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardJun2025" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardJun2025" class="collapse" aria-labelledby="headingJun2025">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -766,10 +878,10 @@
                                             <a href="https://ledriadi.bandcamp.com/album/dentro-lo-specchio"><b>Le Driadi Duo (IT)</b></a>,
                                             <a href="https://www.loogaroo.be/"><b>Loogaroo Quartet</b></a>
                                         <ul>
-                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u45: Le Driadi Duo (IT)</span><span lang="fr">20h45: Le Driadi Duo (IT)</span></li>
-                                            <li><span lang="nl">22u30: Loogaroo Quartet</span><span lang="fr">22h30 : Loogaroo Quartet</span></li>
+                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u45: Le Driadi Duo (IT)</span><span lang="fr">20h45: Le Driadi Duo (IT)</span><span lang="en">8:45 PM: Le Driadi Duo (IT)</span></li>
+                                            <li><span lang="nl">22u30: Loogaroo Quartet</span><span lang="fr">22h30 : Loogaroo Quartet</span><span lang="en">10:30 PM: Loogaroo Quartet</span></li>
                                         </ul>
                                         </p>
                                     </div>
@@ -790,15 +902,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardApr2025" aria-expanded="true" aria-controls="collapseCardApr2025">
+                            <button class="btn" type="button" id="headingApr2025" data-bs-toggle="collapse" data-bs-target="#collapseCardApr2025" aria-expanded="true" aria-controls="collapseCardApr2025">
                                 <h4>
                                     <span lang="nl">25 April 2025</span>
                                     <span lang="fr">25 Avril 2025</span>
+                                    <span lang="en">25 April 2025</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardApr2025" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardApr2025" class="collapse" aria-labelledby="headingApr2025">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -808,17 +921,17 @@
                                             <a href="https://www.wouterkuyper.nl/"><b>Wouter Zonder Draak (NL)</b></a>,
                                             <a href="https://www.triple-x.be/"><b>Triple-X</b></a>
                                         <ul>
-                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u45: Wouter Zonder Draak (NL)</span><span lang="fr">20h45: Wouter Zonder Draak (NL)</span></li>
-                                            <li><span lang="nl">22u30: Triple-X</span><span lang="fr">22h30 : Triple-X</span></li>
+                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u45: Wouter Zonder Draak (NL)</span><span lang="fr">20h45: Wouter Zonder Draak (NL)</span><span lang="en">8:45 PM: Wouter Zonder Draak (NL)</span></li>
+                                            <li><span lang="nl">22u30: Triple-X</span><span lang="fr">22h30 : Triple-X</span><span lang="en">10:30 PM: Triple-X</span></li>
                                         </ul>
                                     </div>
                                     <!-- ... Images ... -->
-                                    <div class="col-md-3">
+                                    <div class="col-md-4">
                                         <img src="assets/img/Wouter%20Kuyper.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Wouter Kuyper">
                                     </div>
-                                    <div class="col-md-5">
+                                    <div class="col-md-4">
                                         <img src="assets/img/Triple%20x.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Triple-X">
                                     </div>
                                 </div>
@@ -831,15 +944,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardFeb2025" aria-expanded="true" aria-controls="collapseCardFeb2025">
+                            <button class="btn" type="button" id="headingFeb2025" data-bs-toggle="collapse" data-bs-target="#collapseCardFeb2025" aria-expanded="true" aria-controls="collapseCardFeb2025">
                                 <h4>
                                     <span lang="nl">7 Februari 2025</span>
                                     <span lang="fr">7 Février 2025</span>
+                                    <span lang="en">7 February 2025</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardFeb2025" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardFeb2025" class="collapse" aria-labelledby="headingFeb2025">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -848,13 +962,13 @@
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://accordsperdus.com/"><b>Accords Perdus</b></a>,
                                             <a href="https://aerokorda.be/"><b>Aerokorda</b></a>
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="https://www.akleja.de/"><b>Akleja (DE)</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://www.akleja.de/"><b>Akleja (DE)</b></a>.
                                         <ul>
-                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u30: Accords Perdus</span><span lang="fr">20h30: Accords Perdus</span></li>
-                                            <li><span lang="nl">22u15: Aerokorda</span><span lang="fr">22h15 : Aerokorda</span></li>
-                                            <li><span lang="nl">24u: Akleja (DE)</span><span lang="fr">24h : Akleja (DE)</span></li>
+                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u30: Accords Perdus</span><span lang="fr">20h30: Accords Perdus</span><span lang="en">8:30 PM: Accords Perdus</span></li>
+                                            <li><span lang="nl">22u15: Aerokorda</span><span lang="fr">22h15 : Aerokorda</span><span lang="en">10:15 PM: Aerokorda</span></li>
+                                            <li><span lang="nl">24u: Akleja (DE)</span><span lang="fr">24h : Akleja (DE)</span><span lang="en">12:00 AM: Akleja (DE)</span></li>
                                         </ul>
                                         </p>
                                     </div>
@@ -865,7 +979,7 @@
                                     <div class="col-md-3">
                                         <img src="assets/img/aerokorda.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Aerokorda">
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-3">
                                         <img src="assets/img/akleja.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Akleja">
                                     </div>
                                 </div>
@@ -878,15 +992,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardJan2025" aria-expanded="true" aria-controls="collapseCardJan2025">
+                            <button class="btn" type="button" id="headingJan2025" data-bs-toggle="collapse" data-bs-target="#collapseCardJan2025" aria-expanded="true" aria-controls="collapseCardJan2025">
                                 <h4>
                                     <span lang="nl">11 Januari 2025</span>
                                     <span lang="fr">11 Janvier 2025</span>
+                                    <span lang="en">11 January 2025</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardJan2025" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardJan2025" class="collapse" aria-labelledby="headingJan2025">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -895,13 +1010,13 @@
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://www.facebook.com/thalasmusic"><b>Thalas</b></a>,
                                             <a href="https://www.facebook.com/profile.php?id=100057904521740"><b>KV Express</b></a>
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="https://www.instagram.com/marasc.folk/"><b>Marasc</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://www.instagram.com/marasc.folk/"><b>Marasc</b></a>.
                                         <ul>
-                                            <li><span lang="nl">18u45: Deuren open</span><span lang="fr">18h45 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u: Dans initiatie</span><span lang="fr">19h : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u: Thalas</span><span lang="fr">20h: Thalas</span></li>
-                                            <li><span lang="nl">22u: KV Express</span><span lang="fr">22h : KV Express</span></li>
-                                            <li><span lang="nl">24u: Marasc</span><span lang="fr">24h : Marasc</span></li>
+                                            <li><span lang="nl">18u45: Deuren open</span><span lang="fr">18h45 : Ouverture des portes</span><span lang="en">6:45 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u: Dans initiatie</span><span lang="fr">19h : Initiation à la danse</span><span lang="en">7:00 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u: Thalas</span><span lang="fr">20h: Thalas</span><span lang="en">8:00 PM: Thalas</span></li>
+                                            <li><span lang="nl">22u: KV Express</span><span lang="fr">22h : KV Express</span><span lang="en">10:00 PM: KV Express</span></li>
+                                            <li><span lang="nl">24u: Marasc</span><span lang="fr">24h : Marasc</span><span lang="en">12:00 AM: Marasc</span></li>
                                         </ul>
                                         </p>
                                     </div>
@@ -912,7 +1027,7 @@
                                     <div class="col-md-3">
                                         <img src="assets/img/KV%20Express.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of KV Express">
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-3">
                                         <img src="assets/img/Marasc.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Marasc">
                                     </div>
                                 </div>
@@ -925,15 +1040,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardNov2024" aria-expanded="true" aria-controls="collapseCardNov2024">
+                            <button class="btn" type="button" id="headingNov2024" data-bs-toggle="collapse" data-bs-target="#collapseCardNov2024" aria-expanded="true" aria-controls="collapseCardNov2024">
                                 <h4>
                                     <span lang="nl">29 November 2024</span>
                                     <span lang="fr">29 Novembre 2024</span>
+                                    <span lang="en">29 November 2024</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardNov2024" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardNov2024" class="collapse" aria-labelledby="headingNov2024">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -941,12 +1057,12 @@
                                             <span lang="nl">Balfolk avond met</span>
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://www.remigeffroy.com/"><b>Rémi Geffroy (FR)</b></a>
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="https://duomooremoss.bandcamp.com/album/spectres"><b>Tom Moore & Archie Moss (UK)</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://duomooremoss.bandcamp.com/album/spectres"><b>Tom Moore & Archie Moss (UK)</b></a>.
                                         <ul>
-                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u45: Tom Moore & Archie Moss (UK)</span><span lang="fr">20h45 : Tom Moore & Archie Moss (UK)</span></li>
-                                            <li><span lang="nl">22u30: Rémi Geffroy (FR)</span><span lang="fr">22h30 : Rémi Geffroy (FR)</span></li>
+                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u45: Tom Moore & Archie Moss (UK)</span><span lang="fr">20h45 : Tom Moore & Archie Moss (UK)</span><span lang="en">8:45 PM: Tom Moore & Archie Moss (UK)</span></li>
+                                            <li><span lang="nl">22u30: Rémi Geffroy (FR)</span><span lang="fr">22h30 : Rémi Geffroy (FR)</span><span lang="en">10:30 PM: Rémi Geffroy (FR)</span></li>
                                         </ul>
                                         </p>
                                     </div>
@@ -966,15 +1082,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardSep2024" aria-expanded="true" aria-controls="collapseCardSep2024">
+                            <button class="btn" type="button" id="headingSep2024" data-bs-toggle="collapse" data-bs-target="#collapseCardSep2024" aria-expanded="true" aria-controls="collapseCardSep2024">
                                 <h4>
                                     <span lang="nl">6 September 2024</span>
                                     <span lang="fr">6 Septembre 2024</span>
+                                    <span lang="en">6 September 2024</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardSep2024" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardSep2024" class="collapse" aria-labelledby="headingSep2024">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -982,12 +1099,12 @@
                                             <span lang="nl">Balfolk avond met</span>
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://www.hartwindhoore.com/nl/projecten/trio"><b>Hartwin Trio</b></a>
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="https://www.facebook.com/duodescheppersanczuk"><b>Duo De Schepper-Sanczuk</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://www.facebook.com/duodescheppersanczuk"><b>Duo De Schepper-Sanczuk</b></a>.
                                         <ul>
-                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u45: Hartwin Trio</span><span lang="fr">20h45 : Hartwin Trio</span></li>
-                                            <li><span lang="nl">22u30: Duo De Schepper-Sanczuk</span><span lang="fr">22h30 : Duo De Schepper-Sanczuk</span></li>
+                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u45: Hartwin Trio</span><span lang="fr">20h45 : Hartwin Trio</span><span lang="en">8:45 PM: Hartwin Trio</span></li>
+                                            <li><span lang="nl">22u30: Duo De Schepper-Sanczuk</span><span lang="fr">22h30 : Duo De Schepper-Sanczuk</span><span lang="en">10:30 PM: Duo De Schepper-Sanczuk</span></li>
                                         </ul>
                                         </p>
                                     </div>
@@ -1007,15 +1124,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardJun2024" aria-expanded="true" aria-controls="collapseCardJun2024">
+                            <button class="btn" type="button" id="headingJun2024" data-bs-toggle="collapse" data-bs-target="#collapseCardJun2024" aria-expanded="true" aria-controls="collapseCardJun2024">
                                 <h4>
                                     <span lang="nl">14 Juni 2024</span>
                                     <span lang="fr">14 Juin 2024</span>
+                                    <span lang="en">14 June 2024</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardJun2024" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardJun2024" class="collapse" aria-labelledby="headingJun2024">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -1023,16 +1141,16 @@
                                             <span lang="nl">Balfolk avond met</span>
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://www.facebook.com/Phloxfolk"><b>Phlox</b></a>
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="https://www.facebook.com/duoclercx/"><b>Duo Clercx</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://www.facebook.com/duoclercx/"><b>Duo Clercx</b></a>.
                                         <ul>
-                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u45: Duo Clercx</span><span lang="fr">20h45: Duo Clercx</span></li>
-                                            <li><span lang="nl">22u30: Phlox</span><span lang="fr">22h30: Phlox</span></li>
+                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u45: Duo Clercx</span><span lang="fr">20h45: Duo Clercx</span><span lang="en">8:45 PM: Duo Clercx</span></li>
+                                            <li><span lang="nl">22u30: Phlox</span><span lang="fr">22h30: Phlox</span><span lang="en">10:30 PM: Phlox</span></li>
                                         </ul>
                                         </p>
                                         <p>
-                                            <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><br>16 euro
+                                            <span lang="nl">Prijs:</span><span lang="fr">Prix:</span><span lang="en">Price:</span><br>16 euro
                                         </p>
                                         <a class="btn btn-secondary btn-spaced" href="https://www.event-tickets.be/Event/JwqxyAkyxWb4y9cLdbGAtPefe8jKiS1qdB2P1zMb">Tickets</a>
                                     </div>
@@ -1052,15 +1170,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardMar2024" aria-expanded="true" aria-controls="collapseCardMar2024">
+                            <button class="btn" type="button" id="headingMar2024" data-bs-toggle="collapse" data-bs-target="#collapseCardMar2024" aria-expanded="true" aria-controls="collapseCardMar2024">
                                 <h4>
                                     <span lang="nl">8 Maart 2024</span>
                                     <span lang="fr">8 Mars 2024</span>
+                                    <span lang="en">8 March 2024</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardMar2024" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardMar2024" class="collapse" aria-labelledby="headingMar2024">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -1068,12 +1187,12 @@
                                             <span lang="nl">Balfolk avond met</span>
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://www.facebook.com/duodescheppersanczuk"><b>Bamako Express</b></a>
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="#"><b>Krosmos</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <b>Krosmos</b>.
                                         <ul>
-                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u45: Bamako Express</span><span lang="fr">20h45: Bamako Express</span></li>
-                                            <li><span lang="nl">22u30: Krosmos</span><span lang="fr">22h30: Krosmos</span></li>
+                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u45: Bamako Express</span><span lang="fr">20h45: Bamako Express</span><span lang="en">8:45 PM: Bamako Express</span></li>
+                                            <li><span lang="nl">22u30: Krosmos</span><span lang="fr">22h30: Krosmos</span><span lang="en">10:30 PM: Krosmos</span></li>
                                         </ul>
                                         </p>
                                     </div>
@@ -1093,15 +1212,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardJan2024" aria-expanded="true" aria-controls="collapseCardJan2024">
+                            <button class="btn" type="button" id="headingJan2024" data-bs-toggle="collapse" data-bs-target="#collapseCardJan2024" aria-expanded="true" aria-controls="collapseCardJan2024">
                                 <h4>
                                     <span lang="nl">5 Januari 2024</span>
                                     <span lang="fr">5 Janvier 2024</span>
+                                    <span lang="en">5 January 2024</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardJan2024" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardJan2024" class="collapse" aria-labelledby="headingJan2024">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -1109,12 +1229,12 @@
                                             <span lang="nl">Balfolk avond met</span>
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://www.facebook.com/Warmoesmusic"><b>Warmoes</b></a>
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="https://www.facebook.com/airboxes"><b>Airboxes</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://www.facebook.com/airboxes"><b>Airboxes</b></a>.
                                         <ul>
-                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u45: Warmoes</span><span lang="fr">20h45: Warmoes</span></li>
-                                            <li><span lang="nl">22u30: Airboxes Trio</span><span lang="fr">22h30: Airboxes Trio</span></li>
+                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u45: Warmoes</span><span lang="fr">20h45: Warmoes</span><span lang="en">8:45 PM: Warmoes</span></li>
+                                            <li><span lang="nl">22u30: Airboxes Trio</span><span lang="fr">22h30: Airboxes Trio</span><span lang="en">10:30 PM: Airboxes Trio</span></li>
                                         </ul>
                                         </p>
                                     </div>
@@ -1134,15 +1254,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardDec2023" aria-expanded="true" aria-controls="collapseCardDec2023">
+                            <button class="btn" type="button" id="headingDec2023" data-bs-toggle="collapse" data-bs-target="#collapseCardDec2023" aria-expanded="true" aria-controls="collapseCardDec2023">
                                 <h4>
                                     <span lang="nl">8 December 2023</span>
                                     <span lang="fr">8 Décembre 2023</span>
+                                    <span lang="en">8 December 2023</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardDec2023" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardDec2023" class="collapse" aria-labelledby="headingDec2023">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -1150,12 +1271,12 @@
                                             <span lang="nl">Balfolk avond met</span>
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://www.naragonia.com/quartet/"><b>Naragonia Quartet</b></a>
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="#"><b>Pavel & Florian</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <b>Pavel & Florian</b>.
                                         <ul>
-                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u45: Pavel & Florian</span><span lang="fr">20h45: Pavel & Florian</span></li>
-                                            <li><span lang="nl">22u30: Naragonia Quartet</span><span lang="fr">22h30: Naragonia Quartet</span></li>
+                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u45: Pavel & Florian</span><span lang="fr">20h45: Pavel & Florian</span><span lang="en">8:45 PM: Pavel & Florian</span></li>
+                                            <li><span lang="nl">22u30: Naragonia Quartet</span><span lang="fr">22h30: Naragonia Quartet</span><span lang="en">10:30 PM: Naragonia Quartet</span></li>
                                         </ul>
                                         </p>
                                     </div>
@@ -1175,15 +1296,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardNov2023" aria-expanded="true" aria-controls="collapseCardNov2023">
+                            <button class="btn" type="button" id="headingNov2023" data-bs-toggle="collapse" data-bs-target="#collapseCardNov2023" aria-expanded="true" aria-controls="collapseCardNov2023">
                                 <h4>
                                     <span lang="nl">3 November 2023</span>
                                     <span lang="fr">3 Novembre 2023</span>
+                                    <span lang="en">3 November 2023</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardNov2023" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardNov2023" class="collapse" aria-labelledby="headingNov2023">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -1192,24 +1314,24 @@
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://www.facebook.com/shillelaghflandre"><b>Shillelagh</b></a>,
                                             <a href="https://www.facebook.com/hartwindhoore"><b>Hartwin Dhoore</b></a>
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="https://www.facebook.com/geronimojeroen"><b>Geronimo</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://www.facebook.com/geronimojeroen"><b>Geronimo</b></a>.
                                         <ul>
-                                            <li><span lang="nl">18u45: Deuren open</span><span lang="fr">18h45 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u: Dans initiatie (Pieterjan Hantson)</span><span lang="fr">19h : Initiation à la danse (Pieterjan Hantson)</span></li>
-                                            <li><span lang="nl">20u: Hartwin Dhoore</span><span lang="fr">20h: Hartwin Dhoore</span></li>
-                                            <li><span lang="nl">21u45: Shillelagh</span><span lang="fr">21h45: Shillelagh</span></li>
-                                            <li><span lang="nl">23u30: Geronimo</span><span lang="fr">23h30: Geronimo</span></li>
+                                            <li><span lang="nl">18u45: Deuren open</span><span lang="fr">18h45 : Ouverture des portes</span><span lang="en">6:45 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u: Dans initiatie (Pieterjan Hantson)</span><span lang="fr">19h : Initiation à la danse (Pieterjan Hantson)</span><span lang="en">7:00 PM: Dance initiation (Pieterjan Hantson)</span></li>
+                                            <li><span lang="nl">20u: Hartwin Dhoore</span><span lang="fr">20h: Hartwin Dhoore</span><span lang="en">8:00 PM: Hartwin Dhoore</span></li>
+                                            <li><span lang="nl">21u45: Shillelagh</span><span lang="fr">21h45: Shillelagh</span><span lang="en">9:45 PM: Shillelagh</span></li>
+                                            <li><span lang="nl">23u30: Geronimo</span><span lang="fr">23h30: Geronimo</span><span lang="en">11:30 PM: Geronimo</span></li>
                                         </ul>
                                         </p>
                                     </div>
                                     <!-- ... Images ... -->
-                                    <div class="col-md-2">
+                                    <div class="col-md-3">
                                         <img src="assets/img/geronimo.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Geronimo">
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-3">
                                         <img src="assets/img/Visuel%20Shillelagh.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Shillelagh">
                                     </div>
-                                    <div class="col-md-2">
+                                    <div class="col-md-3">
                                         <img src="assets/img/hartwin.webp" class="img-fluid rounded-3 card-band-img" loading="lazy" alt="Bandpicture of Hartwin Dhoore">
                                     </div>
                                 </div>
@@ -1222,15 +1344,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardJune2023" aria-expanded="true" aria-controls="collapseCardJune2023">
+                            <button class="btn" type="button" id="headingJune2023" data-bs-toggle="collapse" data-bs-target="#collapseCardJune2023" aria-expanded="true" aria-controls="collapseCardJune2023">
                                 <h4>
                                     <span lang="nl">9 Juni 2023</span>
                                     <span lang="fr">9 Juin 2023</span>
+                                    <span lang="en">9 June 2023</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardJune2023" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardJune2023" class="collapse" aria-labelledby="headingJune2023">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -1238,12 +1361,12 @@
                                             <span lang="nl">Balfolk avond met</span>
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://www.facebook.com/Broesmusic"><b>Broes</b></a>
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="https://www.facebook.com/GPLBA"><b>Les Bottines Artistiques</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://www.facebook.com/GPLBA"><b>Les Bottines Artistiques</b></a>.
                                         <ul>
-                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u30: Les Bottines Artistiques</span><span lang="fr">20h30: Les Bottines Artistiques</span></li>
-                                            <li><span lang="nl">22u30: Broes</span><span lang="fr">22h30: Broes</span></li>
+                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u30: Les Bottines Artistiques</span><span lang="fr">20h30: Les Bottines Artistiques</span><span lang="en">8:30 PM: Les Bottines Artistiques</span></li>
+                                            <li><span lang="nl">22u30: Broes</span><span lang="fr">22h30: Broes</span><span lang="en">10:30 PM: Broes</span></li>
                                         </ul>
                                         </p>
                                     </div>
@@ -1263,15 +1386,16 @@
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardMar2023" aria-expanded="true" aria-controls="collapseCardMar2023">
+                            <button class="btn" type="button" id="headingMar2023" data-bs-toggle="collapse" data-bs-target="#collapseCardMar2023" aria-expanded="true" aria-controls="collapseCardMar2023">
                                 <h4>
                                     <span lang="nl">3 Maart 2023</span>
                                     <span lang="fr">3 Mars 2023</span>
+                                    <span lang="en">3 March 2023</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardMar2023" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardMar2023" class="collapse" aria-labelledby="headingMar2023">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -1279,12 +1403,12 @@
                                             <span lang="nl">Balfolk avond met</span>
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://www.facebook.com/snaarmaarwaar"><b>Snaarmaarwaar</b></a>
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="https://www.facebook.com/WouterendeDraak"><b>Wouter en de Draak (NL)</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://www.facebook.com/WouterendeDraak"><b>Wouter en de Draak (NL)</b></a>.
                                         <ul>
-                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u30: Wouter en de Draak (NL)</span><span lang="fr">20h30: Wouter en de Draak (NL)</span></li>
-                                            <li><span lang="nl">22u30: Snaarmaarwaar</span><span lang="fr">22h30: Snaarmaarwaar</span></li>
+                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u30: Wouter en de Draak (NL)</span><span lang="fr">20h30: Wouter en de Draak (NL)</span><span lang="en">8:30 PM: Wouter en de Draak (NL)</span></li>
+                                            <li><span lang="nl">22u30: Snaarmaarwaar</span><span lang="fr">22h30: Snaarmaarwaar</span><span lang="en">10:30 PM: Snaarmaarwaar</span></li>
                                         </ul>
                                         </p>
                                     </div>
@@ -1299,20 +1423,21 @@
                         </div>
                     </div>
 
-                    <br/>
+                    <br>
 
                     <div class="card bg-light">
                         <div class="card-header">
                             <!-- Toggle button for collapsible content -->
-                            <button class="btn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCardJan2023" aria-expanded="true" aria-controls="collapseCardJan2023">
+                            <button class="btn" type="button" id="headingJan2023" data-bs-toggle="collapse" data-bs-target="#collapseCardJan2023" aria-expanded="true" aria-controls="collapseCardJan2023">
                                 <h4>
                                     <span lang="nl">20 januari 2023</span>
                                     <span lang="fr">20 janvier 2023</span>
+                                    <span lang="en">20 January 2023</span>
                                 </h4>
                             </button>
                         </div>
                         <!-- Collapsible card body -->
-                        <div id="collapseCardJan2023" class="collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseCardJan2023" class="collapse" aria-labelledby="headingJan2023">
                             <div class="card-body">
                                 <div class="row">
                                     <div class="col-md-4 lead">
@@ -1320,12 +1445,12 @@
                                             <span lang="nl">Balfolk avond met</span>
                                             <span lang="fr">Soirée Balfolk avec</span>
                                             <a href="https://www.facebook.com/hotgriselda"><b>Hot Griselda</b></a>
-                                            <span lang="nl">en</span><span lang="fr">et</span> <a href="https://www.facebook.com/Tandemfolkduo"><b>Tandem</b></a>.
+                                            <span lang="nl">en</span><span lang="fr">et</span><span lang="en">and</span> <a href="https://www.facebook.com/Tandemfolkduo"><b>Tandem</b></a>.
                                         <ul>
-                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span></li>
-                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span></li>
-                                            <li><span lang="nl">20u30: Tandem</span><span lang="fr">20h30: Tandem</span></li>
-                                            <li><span lang="nl">22u30: Hot Griselda</span><span lang="fr">22h30: Hot Griselda</span></li>
+                                            <li><span lang="nl">19u15: Deuren open</span><span lang="fr">19h15 : Ouverture des portes</span><span lang="en">7:15 PM: Doors open</span></li>
+                                            <li><span lang="nl">19u30: Dans initiatie</span><span lang="fr">19h30 : Initiation à la danse</span><span lang="en">7:30 PM: Dance initiation</span></li>
+                                            <li><span lang="nl">20u30: Tandem</span><span lang="fr">20h30: Tandem</span><span lang="en">8:30 PM: Tandem</span></li>
+                                            <li><span lang="nl">22u30: Hot Griselda</span><span lang="fr">22h30: Hot Griselda</span><span lang="en">10:30 PM: Hot Griselda</span></li>
                                         </ul>
                                         </p>
                                     </div>
@@ -1345,7 +1470,7 @@
             <!-- Location -->
             <section class="content-section bg-light" id="location">
                 <div class="container px-4 px-lg-5 ">
-                    <h2 class="mb-4 text-center"><span lang="nl">Locatie</span><span lang="fr">Location</span></h2>
+                    <h2 class="mb-4 text-center"><span lang="nl">Locatie</span><span lang="fr">Location</span><span lang="en">Venue</span></h2>
                     <hr class="hr">
                     <div class="row">
                         <div class="col-md-6">
@@ -1364,6 +1489,12 @@
                                 8500 Courtrai <br><br>
                                 À 5 minutes à pied de la gare de Courtrai.<br> Parking disponible devant le bâtiment.
                             </p>
+                            <p class="lead" lang="en">
+                                <b>JC Tranzit</b><br>
+                                Nelson Mandelaplein 17<br>
+                                8500 Kortrijk, Belgium <br><br>
+                                5 minutes walk from Kortrijk station.<br> Parking available in front of the building.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -1372,7 +1503,7 @@
             <!-- Contact-->
             <section class="content-section" id="contact">
                 <div class="container px-4 px-lg-5 text-center">
-                    <h2 class="mb-4"><span lang="nl">Contacteer ons!</span><span lang="fr">Contactez-nous!</span></h2>
+                    <h2 class="mb-4"><span lang="nl">Contacteer ons!</span><span lang="fr">Contactez-nous!</span><span lang="en">Contact us!</span></h2>
                     <hr class="hr">
                     <p>info@cabalfolk.be<br>+32 476 60 89 45</p>
                 </div>
@@ -1384,22 +1515,22 @@
             <div class="container px-4 px-lg-5">
                 <ul class="list-inline mb-5">
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/cabalfolk" aria-label="Facebook"><i class="icon-social-facebook" aria-hidden="true"></i></a>
+                        <a class="social-link rounded-circle text-white me-3" href="https://www.facebook.com/cabalfolk" aria-label="Facebook"><i class="icon-social-facebook" aria-hidden="true"></i></a>
                     </li>
                     <li class="list-inline-item">
-                        <a class="social-link rounded-circle text-white mr-3" href="https://www.instagram.com/cabalfolk/" aria-label="Instagram"><i class="icon-social-instagram" aria-hidden="true"></i></a>
+                        <a class="social-link rounded-circle text-white me-3" href="https://www.instagram.com/cabalfolk/" aria-label="Instagram"><i class="icon-social-instagram" aria-hidden="true"></i></a>
                     </li>
                 </ul>
-                <p class="small mb-0">Copyright &copy; CaBal 2022</p>
+                <p class="small mb-0">Copyright &copy; CaBal 2026</p>
             </div>
         </footer>
         <!-- Scroll to Top Button-->
-        <a class="scroll-to-top rounded" href="#page-top"><i class="fas fa-angle-up"></i></a>
+        <a class="scroll-to-top rounded" href="#page-top" aria-label="Scroll to top"><i class="fas fa-angle-up" aria-hidden="true"></i></a>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
         <!-- Font Awesome icons (free version)-->
-        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous" defer></script>
         <script src="js/scripts.js"></script>
 
         <!-- Google tag (gtag.js) -->
