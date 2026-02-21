@@ -1,42 +1,245 @@
+/* ============================================
+   CaBal Custom Theme
+   ============================================ */
+
+/* --- Custom Properties --- */
+:root {
+    --clr-primary: #c77c7c;
+    --clr-secondary: #d9ada3;
+    --clr-body-bg: #f5e0dc;
+    --clr-light: #fff0eb;
+    --clr-text: #3a3a3a;
+    --clr-white: #ffffff;
+    --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+    --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.12);
+    --radius: 0.75rem;
+    --transition: 0.3s ease;
+}
+
+/* --- Base --- */
+body {
+    background-color: var(--clr-body-bg);
+    color: var(--clr-text);
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+/* --- Links --- */
+a {
+    color: var(--clr-primary);
+    transition: color var(--transition);
+}
+
+a:hover {
+    color: #a25a5a;
+}
+
+.bg-light {
+    background-color: var(--clr-light) !important;
+}
+
+/* --- Sections --- */
 .content-section {
-    margin-top: 5vh
+    margin-top: 5vh;
+    padding: 3rem 0;
 }
 
 .masthead {
-    margin-top: 5vh
+    margin-top: 5vh;
+    padding: 2rem 0;
 }
 
-.card-band-img {
-    height: 40vh;
-    object-fit: cover;
-    object-position: 50% 50%;
+.masthead-logo {
+    max-height: 45vh;
     width: auto;
-    margin-bottom: 20px
 }
 
-/* Main heading style */
+.section-row {
+    margin-top: 5vh;
+}
+
+/* --- Typography --- */
 .main-title {
     font-size: 72px;
+    font-weight: 700;
+    color: var(--clr-text);
 }
 
-/* Hero/feature image style */
-.hero-img {
-    height: 40vh;
-    object-fit: cover;
+/* --- Horizontal Rules --- */
+.hr {
+    border: 0;
+    height: 2px;
+    background: linear-gradient(to right, transparent, var(--clr-primary), transparent);
+    opacity: 0.5;
+    margin: 1.5rem 0;
 }
 
-/* Taller image variant */
-.hero-img-tall {
-    height: 50vh;
-    object-fit: cover;
+/* --- Navbar --- */
+.navbar {
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+    background-color: var(--clr-light) !important;
 }
 
-/* Button spacing */
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: color var(--transition);
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--clr-primary) !important;
+}
+
+/* --- Dropdown --- */
+.dropdown-menu {
+    border: none;
+    box-shadow: var(--shadow-md);
+    border-radius: var(--radius);
+}
+
+.dropdown-item:hover {
+    background-color: var(--clr-light);
+    color: var(--clr-primary);
+}
+
+/* --- Cards --- */
+.card {
+    border: none;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition), box-shadow var(--transition);
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
+}
+
+.card-header {
+    background-color: var(--clr-light);
+    border-bottom: 1px solid rgba(199, 124, 124, 0.15);
+}
+
+.card-header .btn {
+    width: 100%;
+    text-align: left;
+    color: var(--clr-text);
+    font-weight: 600;
+}
+
+.card-header .btn h4 {
+    margin-bottom: 0;
+    color: var(--clr-text);
+}
+
+/* --- Buttons --- */
+.btn-secondary {
+    background-color: var(--clr-secondary);
+    border-color: var(--clr-secondary);
+    color: var(--clr-white);
+    border-radius: var(--radius);
+    transition: all var(--transition);
+}
+
+.btn-secondary:hover {
+    background-color: var(--clr-primary);
+    border-color: var(--clr-primary);
+    color: var(--clr-white);
+    box-shadow: var(--shadow-sm);
+}
+
 .btn-spaced {
     margin-bottom: 20px;
 }
 
-/* Section row spacing */
-.section-row {
-    margin-top: 5vh;
+/* --- Images --- */
+.card-band-img {
+    height: 40vh;
+    object-fit: cover;
+    object-position: 50% 50%;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition);
+}
+
+.card-band-img:hover {
+    transform: scale(1.02);
+}
+
+.hero-img {
+    height: 40vh;
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition);
+}
+
+.hero-img:hover {
+    transform: scale(1.02);
+}
+
+.hero-img-tall {
+    height: 50vh;
+    object-fit: cover;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+}
+
+.card-poster-img {
+    max-height: 55vh;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow-sm);
+}
+
+/* --- Footer --- */
+.footer {
+    padding: 2rem 0;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 3rem;
+    width: 3rem;
+    background-color: var(--clr-primary);
+    transition: background-color var(--transition);
+}
+
+.social-link:hover {
+    background-color: var(--clr-secondary);
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+    .masthead-logo {
+        max-height: 35vh;
+    }
+
+    .main-title {
+        font-size: 48px;
+    }
+
+    .card-band-img,
+    .hero-img {
+        height: 30vh;
+    }
+
+    .hero-img-tall {
+        height: 35vh;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-title {
+        font-size: 36px;
+    }
 }

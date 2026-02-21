@@ -6,10 +6,10 @@
 
 /**
  * Get the user's preferred language from localStorage or browser settings
- * @returns {string} Language code ('nl' or 'fr')
+ * @returns {string} Language code ('nl', 'fr', or 'en')
  */
 function getPreferredLanguage() {
-    var supportedLanguages = ['nl', 'fr'];
+    var supportedLanguages = ['nl', 'fr', 'en'];
 
     // First check localStorage for saved preference
     var savedLanguage = localStorage.getItem('cabal-language');
@@ -29,7 +29,7 @@ function getPreferredLanguage() {
 
 /**
  * Change the displayed language and save preference
- * @param {string} language - Language code ('nl' or 'fr')
+ * @param {string} language - Language code ('nl', 'fr', or 'en')
  */
 function changeLanguage(language) {
     // Save preference to localStorage
@@ -39,7 +39,7 @@ function changeLanguage(language) {
     document.documentElement.lang = language;
 
     // Hide all language-specific elements
-    var allLangElements = document.querySelectorAll('[lang="nl"], [lang="fr"]');
+    var allLangElements = document.querySelectorAll('[lang="nl"], [lang="fr"], [lang="en"]');
     for (var i = 0; i < allLangElements.length; i++) {
         allLangElements[i].style.display = 'none';
     }
