@@ -129,9 +129,32 @@ a:hover {
     font-weight: 600;
 }
 
+.card-header .btn h3,
 .card-header .btn h4 {
     margin-bottom: 0;
     color: var(--clr-text);
+}
+
+/* --- Previous events: per-year groups --- */
+.year-card:hover {
+    transform: none;
+}
+
+/* Year groups sit in half-width columns on large screens: text on top, band pictures side by side below */
+@media (min-width: 992px) {
+    .previous-events-grid .card-body .row > .lead:not(.col-md-6) {
+        width: 100%;
+    }
+
+    .previous-events-grid .card-body .row > .col-md-3,
+    .previous-events-grid .card-body .row > .col-md-4:not(.lead) {
+        flex: 1 1 0;
+        width: auto;
+    }
+
+    .previous-events-grid .card-band-img {
+        height: 25vh;
+    }
 }
 
 /* --- Buttons --- */
